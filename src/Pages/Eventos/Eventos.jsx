@@ -1,14 +1,13 @@
 import React from 'react'
 import Carrusel from '../../Components/Carrusel/Carrusel'
 
-const Home = () => {
+const Eventos = () => {
   return (
     <div>
-      <Carrusel />
-      <p>home</p>
-
+      Eventos
+        <Carrusel />
     </div>
   )
 }
 
-export default Home
+export default Eventos
