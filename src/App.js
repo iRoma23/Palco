@@ -1,4 +1,5 @@
 import './App.css';
+<<<<<<< HEAD
 import Navbar from './Components/Navbar/Navbar';
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
@@ -26,6 +27,20 @@ function App() {
       </BrowserRouter>
    </>
   );
+=======
+import Carrusel from './Components/Carrusel/Carrusel';
+import Navbar from './Components/Navbar/Navbar';
+
+function App() {
+  return (
+    <>
+      <Navbar />
+      <Carrusel />
+      <Carrusel />
+      <Carrusel />
+    </>
+  ); 
+>>>>>>> 4301b6e285f7d5f82eda3dc893b0465ac62f3afe
 }
 
 export default App;

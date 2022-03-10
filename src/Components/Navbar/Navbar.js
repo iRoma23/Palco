@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 
 const Navbar = () => {
@@ -44,5 +45,43 @@ const Navbar = () => {
         </>
     )
 }
+=======
+import React, { useState } from 'react'
+import { MenuItems } from './MenuItems'
+import './Navbar.css'
+import menuIcon from './icons/menu.svg'
+import closeIcon from './icons/close.svg'
+import Button from './Button'
+
+const Navbar = () => {
+  const [clicked, setclicked] = useState(false);
+  
+  const handleClick = () => {
+    setclicked(!clicked)
+  }
+
+  return (
+    <>
+    <nav className='NavbarItems'>
+      <h1 className='navbar-title'>Mi Palco</h1>
+      <div className='menu-icon' onClick={handleClick}>
+        <img className='menu-icon__img' src={clicked ? closeIcon : menuIcon} />
+      </div>
+      <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
+        {MenuItems.map((item, index) => {
+          return(
+            <li key={index}>
+              <a className={`${item.cName} nav-item`} href={item.url}>{item.title}</a>
+            </li>
+          )
+        })}
+      </ul>
+      <Button txt={"Salir"}></Button>
+    </nav>
+    <div className='fixed'></div>
+    </>
+  )
+} 
+>>>>>>> 4301b6e285f7d5f82eda3dc893b0465ac62f3afe
 
 export default Navbar
