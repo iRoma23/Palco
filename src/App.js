@@ -7,6 +7,8 @@ function App() {
     <>
       <Navbar />
       <Carrusel />
+      <Carrusel />
+      <Carrusel />
     </>
   ); 
 }

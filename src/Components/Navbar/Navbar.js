@@ -30,6 +30,7 @@ const Navbar = () => {
       </ul>
       <Button txt={"Salir"}></Button>
     </nav>
+    <div className='fixed'></div>
     </>
   )
 } 

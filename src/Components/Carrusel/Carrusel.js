@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import './Carrusel.css';
 
 const Carrusel = () => {
   const images = ['01.jpg', '02.jpg', '03.jpg'];
@@ -13,7 +14,6 @@ const Carrusel = () => {
         nextIndex = index + 1;
       } else {
         nextIndex = 0;
-        
       }
     } else {
       if (index > 0) {
@@ -35,12 +35,13 @@ const Carrusel = () => {
   }
 
   return (
-    <div>
-      <img src={require(`./img/${selectedImage}`)} />
-      <button onClick={previous}>{'<'}</button>
-      <button onClick={next}>{'>'}</button>
+    <div className='d-flex flex-column align-items-center mt-3'>
+      <img className='img-fluid px-3' src={require(`./img/${selectedImage}`)} />
+      <div className='mt-3'>
+        <button className='btn btn-dark mx-2' onClick={previous}>{'<'}</button>
+        <button className='btn btn-dark mx-2' onClick={next}>{'>'}</button>
+      </div>
     </div>
-    
   )
 }
 
