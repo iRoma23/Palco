@@ -1,20 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const RegistrarPalco = () => {
+
+
+const RegistrarPropietario = () => {
   return (
     <>
-      <div className="card-body">
+      <div className="card-body m-5 p-0">
         <h1 className="card-title">Datos del Propietario</h1>
       </div>
-      <div className="card-body ">
-        <form className="row-12 g-3 card-body principal">
-          <div className="row-12">
+      <div className="col-md-6 m-5 p-0">
+        <form className="row-6 g-3 card-body">
+          <div className="row-6">
             <label for="inputName" className="form-label">
               Nombres
             </label>
-            <input type="text" className="form-control" id="inputName" placeholder="ronald"/>
+            <input
+              type="text"
+              className="form-control"
+              id="inputName"
+              placeholder="ronald"
+            />
           </div>
-          <div className="row-12">
+          <div className="row-6">
             <label for="input-last-name" className="form-label">
               Apellidos
             </label>
@@ -25,7 +33,7 @@ const RegistrarPalco = () => {
               placeholder="zanga"
             />
           </div>
-          <div className="row-12">
+          <div className="row-6">
             <label for="inputDni" className="form-label">
               Dni
             </label>
@@ -36,7 +44,7 @@ const RegistrarPalco = () => {
               placeholder="dni"
             />
           </div>
-          <div className="row-12">
+          <div className="row-6">
             <label for="inputAddress" className="form-label">
               Direccion
             </label>
@@ -47,18 +55,25 @@ const RegistrarPalco = () => {
               placeholder="tacna, tacna, gregorio albarracin"
             />
           </div>
-          <div className="row-12">
+          <div className="row-6 mb-3">
             <label for="inputCity" className="form-label">
               Ciudad
             </label>
-            <input type="text" className="form-control" id="inputCity" placeholder="tacna-peru" />
+            <input
+              type="text"
+              className="form-control"
+              id="inputCity"
+              placeholder="tacna-peru"
+            />
           </div>
 
-        
-          <div className="row-12 p-3">
-            <button type="submit" className="btn btn-primary">
-              Siguiente
-            </button>
+          <div className="row-6">
+            <Link
+              className="btn btn-primary"
+              type="submit"
+              to="/palco"
+            >Siguiente</Link>
+            
           </div>
         </form>
       </div>
@@ -66,4 +81,4 @@ const RegistrarPalco = () => {
   );
 };
 
-export default RegistrarPalco;
+export default RegistrarPropietario;

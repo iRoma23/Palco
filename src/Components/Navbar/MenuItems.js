@@ -6,7 +6,7 @@ export const MenuItems = [
   },
   {
     title: 'Registrar Palco',
-    url: 'registrar_palco',
+    url: 'propietario',
     cName: 'nav-links'
   },
   {

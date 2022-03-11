@@ -1,5 +1,5 @@
 import React from 'react'
-import portada from "../../img/butacas.jpg";
+import portada from "./img/butacas.jpg";
 
 const RegistrarFotos = () => {
   return (

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import palco from "./img/palco.jpg";
 
 const RegistrarPalco = () => {
@@ -98,9 +99,12 @@ const RegistrarPalco = () => {
                 </div>
                 {/* Aca va el Boton */}
                 <div className=" gap-2 d-md-flex justify-content-md-end mt-2">
-                  <button type="button" class="btn btn-primary">
+                  <Link type="button" class="btn btn-primary" to="/propietario">
+                  Atras
+                  </Link>
+                  <Link type="button" class="btn btn-primary " to="/foto_palco">
                     Siguiente
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
