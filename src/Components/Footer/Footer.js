@@ -28,20 +28,18 @@ const Footer = () => {
         <div className="col ">
           <h2>SIGUENOS</h2>
           <div className="row">
-            <div className="row">
               <a href="#" className="col">
-                <img className="col" width="32" src={facebook}/>
+                <img className="col" width="16" src={facebook}/>
               </a>
               <a href="#" className="col">
-                <img className="col" width="32" src={instagram}/>
+                <img className="col" width="16" src={instagram}/>
               </a>
               <a href="#" className="col">
-                <img className="col" width="32" src={twitter}/>
+                <img className="col" width="16" src={twitter}/>
               </a>
               <a href="#" className="col">
-                <img className="col" width="32" src={youtube}/>
+                <img className="col" width="16" src={youtube}/>
               </a>
-            </div>
           </div>
         </div>
       </div>
