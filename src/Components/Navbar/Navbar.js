@@ -28,7 +28,7 @@ const Navbar = () => {
             )
           })}
         </ul>
-        <Button txt={"Salir"}></Button>
+        <Button></Button>
       </nav>
       <div className='fixed'></div>
     </header>

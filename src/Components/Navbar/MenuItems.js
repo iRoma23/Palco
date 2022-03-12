@@ -5,18 +5,20 @@ export const MenuItems = [
     cName: 'nav-links'
   },
   {
+    title: 'Eventos Publicados',
+    url: '#',
+    cName: 'nav-links'
+  },
+  {
     title: 'Registrar Palco',
     url: '#',
     cName: 'nav-links'
   },
   {
-    title: 'Eventos Publicos',
-    url: '#',
-    cName: 'nav-links'
-  },
-  {
-    title: 'Salir',
+    title: 'Login',
     url: '#',
     cName: 'nav-links-mobile'
   },
 ]
+
+export const MenuButtonItem = 'Salir';
