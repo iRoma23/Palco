@@ -14,8 +14,10 @@ import RegistrarPalco from './Pages/Registrar_Palco/RegistrarPalco';
 import RegistrarFotos from './Pages/Registrar_Palco/RegistrarFotos';
 
 function App() {
+  const images = ['01.jpg', '02.jpg', '03.jpg'];
   return (
     <>
+<<<<<<< HEAD
 
       <BrowserRouter>
         <Navbar />
@@ -35,6 +37,12 @@ function App() {
 
       </BrowserRouter>
 
+=======
+      <Navbar />
+      <Carrusel images={images} autoplay={true} />
+      <Carrusel images={images} />
+      <Carrusel images={images} />
+>>>>>>> 001ff6f82184d74bb5f7dde2c985587d4018ef46
     </>
   );
 }
