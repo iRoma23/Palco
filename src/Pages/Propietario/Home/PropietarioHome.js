@@ -8,10 +8,10 @@ const PropietarioHome = () => {
 
   return (
     <>
-      <Navbar />
+      
       <Carrusel images={images} autoplay ={true} title={"Populares"}/>
       <Carrusel images={images} title={"Proximos"}/>
-      <Footer />
+      
     </>
   )
 }

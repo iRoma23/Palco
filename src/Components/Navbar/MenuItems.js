@@ -6,12 +6,12 @@ export const MenuItems = [
   },
   {
     title: 'Eventos Publicados',
-    url: '#',
+    url: 'publicados',
     cName: 'nav-links'
   },
   {
     title: 'Registrar Palco',
-    url: 'propietario',
+    url: 'registro_propietario',
     cName: 'nav-links'
   },
   {
