@@ -9,10 +9,10 @@
   transition: 1s;
   position: relative;
   z-index: -1;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .img-carrusel__loaded {
   opacity: 1;
-  object-fit: cover;
+  object-fit: fill;
 }

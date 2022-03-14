@@ -40,7 +40,7 @@ const Carrusel = (props) => {
       }
       setSelectedIndex(nextIndex);
       setSelectedImage(images[nextIndex]);
-    }, 500);
+    }, 1000);
   }
 
   const previous = () => {
@@ -52,16 +52,20 @@ const Carrusel = (props) => {
   }
 
   return (
-    <div className='d-flex flex-column align-items-center mt-3'>
-      <div className='img-container'>
-        <img className={loaded ? "img-carrusel__loaded img-fluid px-4" : "img-carrusel img-fluid px-4"} src={require(`./img/${selectedImage}`)} onLoad={() => {setLoaded(true)}} />
-      </div>
-      
-      <div className='mt-3'>
-        <button className='btn btn-dark mx-2' onClick={previous}>{'<'}</button>
-        <button className='btn btn-dark mx-2' onClick={next}>{'>'}</button>
+    <div className='mt-3'>
+      <h3 className='ms-5'>{props.title}</h3>
+      <div className='d-flex flex-column align-items-center mt-3'>
+        <div className='img-container'>
+          <img className={loaded ? "img-carrusel__loaded img-fluid px-4" : "img-carrusel img-fluid px-4"} src={require(`./img/${selectedImage}`)} onLoad={() => {setLoaded(true)}} />
+        </div>
+        
+        <div className='mt-3'>
+          <button className='btn btn-dark mx-2' onClick={previous}>{'<'}</button>
+          <button className='btn btn-dark mx-2' onClick={next}>{'>'}</button>
+        </div>
       </div>
     </div>
+    
   )
 }
 
