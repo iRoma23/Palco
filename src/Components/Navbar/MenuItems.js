@@ -1,17 +1,17 @@
 export const MenuItems = [
   {
     title: 'Eventos',
-    url: '#',
+    url: 'eventos',
     cName: 'nav-links'
   },
   {
     title: 'Eventos Publicados',
-    url: '#',
+    url: 'publicados',
     cName: 'nav-links'
   },
   {
     title: 'Registrar Palco',
-    url: '#',
+    url: 'registro_propietario',
     cName: 'nav-links'
   },
   {
