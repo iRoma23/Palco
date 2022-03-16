@@ -6,28 +6,28 @@ import logog from "../../Assets/images/logo-google.png";
 export const SignIn = () => {
   return (
     <form action="#">
-      <div className="container mt-3">
+      <div className="container mt-3 col col-md-6">
         <div className="container mb-3">
           <div className="row text-center">
             <div className="col-12 pb-4 fs-5">Iniciar Sesión</div>
           </div>
-          <div className="row">
-            <div className="">
+          <div className="col justify-content-center">
+            <div className="col text-center">
               <button
                 type="submit"
                 className="btn btn-outline-primary w-100 my-1"
               >
                 <div className="row align-items-center">
                   <div className="col-2 d-md-block">
-                    <img src={logof} width="32" alt="F" />
+                    <img src={logof} width="30" alt="F" />
                   </div>
-                  <div className="col-9 col-md-8 text-center">
+                  <div className="col text-center">
                     Sign in with Facebook
                   </div>
                 </div>
               </button>
             </div>
-            <div className="">
+            <div className="col text-center">
               <button
                 type="submit"
                 className="btn btn-outline-primary w-100 my-1"
@@ -36,7 +36,7 @@ export const SignIn = () => {
                   <div className="col-2 d-md-block">
                     <img src={logog} width="30" alt="G" />
                   </div>
-                  <div className="col-9 col-md-8 text-center">
+                  <div className="col text-center">
                     Sign in with Google
                   </div>
                 </div>
