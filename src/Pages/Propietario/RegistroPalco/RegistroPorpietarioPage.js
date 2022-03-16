@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 
 const RegistroPorpietarioPage = () => {
   return (
-    <div>
-        <div className="card-body m-5 p-0">
+    <div className='container d-flex flex-column align-items-center'>
+      <div className="card-body mt-2">
         <h1 className="card-title">Datos del Propietario</h1>
       </div>
-      <div className="col-md-6 m-5 p-0">
-        <form className="row-6 g-3 card-body">
+      <div className="col-6 card-body border">
+        <form className="card-body">
           <div className="row-6">
             <label for="inputName" className="form-label">
               Nombres
@@ -17,7 +17,7 @@ const RegistroPorpietarioPage = () => {
               type="text"
               className="form-control"
               id="inputName"
-              placeholder="ronald"
+              placeholder="..."
             />
           </div>
           <div className="row-6">
@@ -28,7 +28,7 @@ const RegistroPorpietarioPage = () => {
               type="text"
               className="form-control"
               id="input-last-name"
-              placeholder="zanga"
+              placeholder="..."
             />
           </div>
           <div className="row-6">
@@ -39,7 +39,7 @@ const RegistroPorpietarioPage = () => {
               type="text"
               className="form-control"
               id="inputDni"
-              placeholder="dni"
+              placeholder="..."
             />
           </div>
           <div className="row-6">
@@ -65,16 +65,17 @@ const RegistroPorpietarioPage = () => {
             />
           </div>
 
-          <div className="row-6">
-            <Link
-              className="btn btn-primary"
-              type="submit"
-              to="/registro_palco"
-            >Siguiente</Link>
-            
-          </div>
         </form>
+        <div className="row-6 gap-2 d-md-flex justify-content-md-end mt-2" >
+          <Link
+            className="btn btn-primary"
+            type="submit"
+            to="/registro_palco"
+          >Siguiente</Link>
+
+        </div>
       </div>
+
     </div>
   )
 }

@@ -12,6 +12,7 @@ import Eventos from './Pages/Eventos/Eventos';
 import RegistrarPropietario from './Pages/Registrar_Palco/RegistrarPropietario';
 import RegistrarPalco from './Pages/Registrar_Palco/RegistrarPalco';
 import RegistrarFotos from './Pages/Registrar_Palco/RegistrarFotos';
+import Publicado from './Pages/Propietario/Publicados/Publicado/Publicado';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
           <Route path='/palco' element={<RegistrarPalco />} />
           <Route path='/foto_palco' element={<RegistrarFotos />} />
           <Route path='/publicados' element={<Publicados />} />
+          <Route path='/publicado' element={<Publicado />} />
           <Route path='/eventos' element={<Eventos />} />
 
           <Route path='*' element={<NotFoundPages />} />
