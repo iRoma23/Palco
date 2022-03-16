@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="mt-5">
       <div className="row align-items-center p-2 m-0 bg-dark text-white">
-        <div className="col-4 text-center">
+        <div className="col-md-4 text-center">
           <figure className="figure figure-img">
             <a href="#">
               <img src={logo} width="100" alt="logo tupalco" />
@@ -17,15 +17,13 @@ const Footer = () => {
             </a>
           </figure>
         </div>
-        <div className="col-4">
+        <div className="col-md-4">
           <h2>SOBRE NOSOTROS</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum iste
-            cupiditate amet? safsd sdfsdf gfdsgdfg
+            Somos una empresa dedicada al alquiler de Palcos, trabajamos como intermediarios entre el propietario del Palco y la persona interesada en alquilar alguno.
           </p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit? fsafdff fdsf</p>
         </div>
-        <div className="col-4">
+        <div className="col-md-4">
           <h2>SIGUENOS:</h2>
           <div className="row mt-4">
               <a href="#" className="col-2">
