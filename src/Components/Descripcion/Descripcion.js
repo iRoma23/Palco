@@ -11,6 +11,9 @@ const Descripcion = () => {
           <li className='p-2'>1 baño</li>
           <li className='p-2'>2 cocheras</li>
         </ul>
+        <div className='d-flex justify-content-center'>
+          <button className='btn btn-primary'>Publicar Palco</button>
+        </div>
       </div>
     </div>
   )
