@@ -1,15 +1,11 @@
 import './App.css';
-import Descripcion from './Components/Descripcion/Descripcion';
-import Informacion from './Components/Informacion/Informacion';
-import Navbar from './Components/Navbar/Navbar'
+import Evento from './Pages/Home/Evento/Evento';
 
 function AppPrueba() {
 
   return (
     <>
-      <Navbar />
-      <Informacion />
-      <Descripcion />
+      <Evento />
     </>
   ); 
 }
