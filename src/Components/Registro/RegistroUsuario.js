@@ -3,7 +3,7 @@ import React from "react";
 const RegistroUsuario = () => {
   return (
     <form className="row g-3" action="#">
-      <div className="container mt-3 col col-md-6">
+      <div className="container mt-3 col col-md-6 p-4">
         <div className="row text-center">
             <div className="col-12 pb-4 fs-5">Registro de usuario</div>
         </div>
@@ -21,39 +21,41 @@ const RegistroUsuario = () => {
         </div>
         <div className="col-12">
           <label for="inputAddress" className="form-label">
-            Address
+            Nombres Completos
           </label>
           <input
             type="text"
             className="form-control"
             id="inputAddress"
-            placeholder="1234 Main St"
+            placeholder="Ej. Romario Jara"
           />
         </div>
         <div className="col-12">
           <label for="inputAddress2" className="form-label">
-            Address 2
+            Telefono Móvil
           </label>
           <input
-            type="text"
+            type="number"
             class="form-control"
-            id="inputAddress2"
-            placeholder="Apartment, studio, or floor"
+            id="movil"
+            placeholder=""
           />
         </div>
         <div className="col-md-6">
           <label for="inputCity" className="form-label">
-            City
+            Ciudad
           </label>
           <input type="text" className="form-control" id="inputCity" />
         </div>
         <div className="col-md-4">
           <label for="inputState" className="form-label">
-            State
+            Pais
           </label>
           <select id="inputState" className="form-select">
-            <option selected>Choose...</option>
-            <option>...</option>
+            <option selected>Perú</option>
+            <option>Argentina</option>
+            <option>Ecuador</option>
+            <option>Chile</option>
           </select>
         </div>
         <div className="col-md-2">
@@ -70,13 +72,13 @@ const RegistroUsuario = () => {
               id="gridCheck"
             />
             <label className="form-check-label" for="gridCheck">
-              Check me out
+              Acepto los Términos y condiciones
             </label>
           </div>
         </div>
         <div className="col-12">
           <button type="submit" className="btn btn-primary">
-            Sign in
+            Registrar
           </button>
         </div>
       </div>
