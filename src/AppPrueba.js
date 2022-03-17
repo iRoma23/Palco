@@ -1,15 +1,11 @@
 import './App.css';
-import Informacion from './Components/Informacion/Informacion';
-import Navbar from './Components/Navbar/Navbar'
-import Footer from './Components/Footer/Footer'
+import Evento from './Pages/Propietario/Home/Evento/Evento';
 
 function AppPrueba() {
 
   return (
     <>
-      <Navbar />
-      <Informacion />
-      <Footer />
+      <Evento />
     </>
   ); 
 }

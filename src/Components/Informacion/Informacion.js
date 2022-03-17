@@ -4,8 +4,8 @@ const Informacion = () => {
   const images = ['01.jpg', '02.jpg', '03.jpg'];
   
   return (
-    <div className='row justify-content-center mt-3'>
-      <div className='col-6'>
+    <div className='row justify-content-center mt-3 mx-0'>
+      <div className='col-10 col-sm-9 col-md-8'>
         <div className=''>
           <img className='card-img-top' src={require(`../Carrusel/img/${images[0]}`)}/>
         </div>
