@@ -1,6 +1,7 @@
 import './App.css';
 import Informacion from './Components/Informacion/Informacion';
 import Navbar from './Components/Navbar/Navbar'
+import Footer from './Components/Footer/Footer'
 
 function AppPrueba() {
 
@@ -8,6 +9,7 @@ function AppPrueba() {
     <>
       <Navbar />
       <Informacion />
+      <Footer />
     </>
   ); 
 }
