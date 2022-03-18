@@ -1,8 +1,12 @@
 import React from 'react'
+import RegistroUsuario from '../../../Components/Registro/RegistroUsuario'
+
 
 const VisitanteRegistro = () => {
   return (
-    <div>VisitanteRegistro</div>
+    <>
+      <RegistroUsuario />
+    </>
   )
 }
 

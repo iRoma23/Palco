@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
+import { SignIn } from "./Components/Sign_in/SignIn";
 import NotFoundPages from "./Pages/not_found_404/NotFoundPages";
 import Evento from "./Pages/Propietario/Home/Evento/Evento";
 import PropietarioHome from "./Pages/Propietario/Home/PropietarioHome";
@@ -10,6 +11,7 @@ import Publicados from "./Pages/Propietario/Publicados/Publicados";
 import RegistroFotoPage from "./Pages/Propietario/RegistroPalco/RegistroFotoPage";
 import RegistroPalcoPage from "./Pages/Propietario/RegistroPalco/RegistroPalcoPage";
 import RegistroPorpietarioPage from "./Pages/Propietario/RegistroPalco/RegistroPorpietarioPage";
+import VisitanteRegistro from "./Pages/Visitante/Registro/VisitanteRegistro";
 
 function AppPrueba() {
   return (
