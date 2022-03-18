@@ -1,6 +1,7 @@
 import React from 'react'
 import './Button.css'
 import { MenuButtonItem } from './MenuItems'
+import { Link } from 'react-router-dom'
 
 
 const STYLES = [
@@ -19,7 +20,11 @@ const Button = ({type, onClick, buttonStyle, buttonSize}) => {
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <button className={`button ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick} type={type}>{MenuButtonItem}</button>
+    <button className={`button ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick} type={type}>
+      <Link className='decoration-none' to='/'>
+        {MenuButtonItem}
+      </Link>
+    </button>
   )
 }
 

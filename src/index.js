@@ -6,11 +6,12 @@ import reportWebVitals from './reportWebVitals';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import AppPrueba from './AppPrueba';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <AppPrueba />
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
