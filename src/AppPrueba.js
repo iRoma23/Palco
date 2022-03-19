@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 import { SignIn } from "./Components/Sign_in/SignIn";
@@ -13,11 +14,13 @@ import RegistroPalcoPage from "./Pages/Propietario/RegistroPalco/RegistroPalcoPa
 import RegistroPorpietarioPage from "./Pages/Propietario/RegistroPalco/RegistroPorpietarioPage";
 import VisitanteRegistro from "./Pages/Visitante/Registro/VisitanteRegistro";
 
+
+
 function AppPrueba() {
   return (
     <>
       <Navbar />
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<PropietarioHome />} />
         <Route path="/eventos" element={<Evento />} />
         <Route path="/publicados" element={<Publicados />} />
@@ -26,7 +29,9 @@ function AppPrueba() {
         <Route path="/registro_palco" element={<RegistroPalcoPage />} />
         <Route path="/registro_foto" element={<RegistroFotoPage />} />
         <Route path="*" element={<NotFoundPages />} />
-      </Routes>
+      </Routes> */}
+
+      <Publicados />
       <Footer />
     </>
   );
