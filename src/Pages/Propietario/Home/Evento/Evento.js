@@ -5,7 +5,7 @@ import Informacion from '../../../../Components/Informacion/Informacion';
 const Evento = () => {
   return (
     <>
-      <Informacion />
+      <Informacion disabled={false} />
       <Descripcion />
     </>
   )

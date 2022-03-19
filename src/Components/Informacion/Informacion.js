@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Informacion = () => {
+const Informacion = (props) => {
   const images = ['01.jpg', '02.jpg', '03.jpg'];
-  
+
   return (
     <div className='row justify-content-center mt-3 mx-0'>
       <div className='col-10 col-sm-9 col-md-8'>
@@ -16,7 +16,7 @@ const Informacion = () => {
           </div>
           <div className='mt-2'>
             <span>Estadio:</span>
-            <select className='form-select'>
+            <select className='form-select'  disabled={props.disabled}>
               <option selected>Escoge tu estadio</option>
               <option value="1">Monumental</option>
               <option value="2">Nacional</option>
@@ -24,7 +24,7 @@ const Informacion = () => {
           </div>
           <div className='mt-2'>
             <span>Palco:</span>
-            <select className='form-select'>
+            <select className='form-select' disabled={props.disabled}>
               <option selected>Escoge tu palco</option>
               <option value="1">100</option>
               <option value="2">101</option>

@@ -31,7 +31,7 @@ function AppPrueba() {
         <Route path="*" element={<NotFoundPages />} />
       </Routes> */}
 
-      <Publicados />
+      <Publicado />
       <Footer />
     </>
   );
