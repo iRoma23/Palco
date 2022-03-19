@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
+import NavbarVisit from "./Components/Navbar/NavbarVisitante/NavbarVisit";
 import { SignIn } from "./Components/Sign_in/SignIn";
 import NotFoundPages from "./Pages/not_found_404/NotFoundPages";
 import Evento from "./Pages/Propietario/Home/Evento/Evento";
@@ -11,12 +12,14 @@ import Publicados from "./Pages/Propietario/Publicados/Publicados";
 import RegistroFotoPage from "./Pages/Propietario/RegistroPalco/RegistroFotoPage";
 import RegistroPalcoPage from "./Pages/Propietario/RegistroPalco/RegistroPalcoPage";
 import RegistroPorpietarioPage from "./Pages/Propietario/RegistroPalco/RegistroPorpietarioPage";
+import VisitanteHome from "./Pages/Visitante/Home/VisitanteHome";
 import VisitanteRegistro from "./Pages/Visitante/Registro/VisitanteRegistro";
 
 function AppPrueba() {
   return (
     <>
       <Navbar />
+      <NavbarVisit />
       <Routes>
         <Route path="/" element={<PropietarioHome />} />
         <Route path="/eventos" element={<Evento />} />
