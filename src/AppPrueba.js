@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Footer from "./Components/Footer/Footer";
+import Infohome from "./Components/InfoHome/Infohome";
 import Navbar from "./Components/Navbar/Navbar";
 import { SignIn } from "./Components/Sign_in/SignIn";
 import NotFoundPages from "./Pages/not_found_404/NotFoundPages";
