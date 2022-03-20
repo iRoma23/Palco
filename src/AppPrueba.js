@@ -31,6 +31,7 @@ function AppPrueba() {
         <Route path="/registro_foto" element={<RegistroFotoPage />} />
         <Route path="*" element={<NotFoundPages />} />
       </Routes>
+      <Nosotros />
       <Footer />
     </>
   );
