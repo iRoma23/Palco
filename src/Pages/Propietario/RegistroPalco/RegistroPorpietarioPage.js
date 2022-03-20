@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const RegistroPorpietarioPage = () => {
+  
   return (
     <div className='container d-flex flex-column align-items-center'>
       <div className="card-body mt-2">
