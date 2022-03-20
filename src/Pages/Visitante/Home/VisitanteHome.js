@@ -1,6 +1,5 @@
 import React from 'react'
 import Carrusel from '../../../Components/Carrusel/Carrusel'
-import Footer from '../../../Components/Footer/Footer'
 import Infohome from '../../../Components/InfoHome/Infohome'
 import NavbarVisit from '../../../Components/Navbar/NavbarVisitante/NavbarVisit'
 
@@ -12,7 +11,6 @@ const VisitanteHome = () => {
      <NavbarVisit />
      <Carrusel images={images} autoplay={true} />
      <Infohome />
-     <Footer />
     </>
   )
 }
