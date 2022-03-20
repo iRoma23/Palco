@@ -22,3 +22,4 @@ export const MenuItems = [
 ]
 
 export const MenuButtonItem = 'Salir';
+

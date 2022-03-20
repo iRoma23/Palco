@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const RegistroUsuario = () => {
   return (
-    <form className="row g-3" action="#">
-      <div className="container mt-3 col col-md-6 p-4">
-        <div className="row text-center">
+    <>
+    <div className="container">
+    <form  action="#">
+      <div className="col">
+        <div className=" text-center">
             <div className="col-12 pb-4 fs-5">Registro de usuario</div>
         </div>
         <div className="col-md-6">
@@ -77,12 +80,17 @@ const RegistroUsuario = () => {
           </div>
         </div>
         <div className="col-12">
-          <button type="submit" className="btn btn-primary">
-            Registrar
-          </button>
+        <Link
+            className="btn btn-primary"
+            type="submit"
+            to="/visitante"
+          >Registrar</Link>
         </div>
       </div>
     </form>
+    </div>
+    </>
+   
   );
 };
 
