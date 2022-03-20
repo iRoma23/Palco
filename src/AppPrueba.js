@@ -3,6 +3,7 @@ import "./App.css";
 
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
+import Nosotros from "./Components/Nosotros/Nosotros";
 import NotFoundPages from "./Pages/not_found_404/NotFoundPages";
 import Evento from "./Pages/Propietario/Home/Evento/Evento";
 import PropietarioHome from "./Pages/Propietario/Home/PropietarioHome";
@@ -30,6 +31,7 @@ function AppPrueba() {
         <Route path="/registro_foto" element={<RegistroFotoPage />} />
         <Route path="*" element={<NotFoundPages />} />
       </Routes>
+      <Nosotros />
       <Footer />
     </>
   );
