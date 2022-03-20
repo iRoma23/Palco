@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const EventoPublicado = () => {
   return (
@@ -10,7 +11,7 @@ const EventoPublicado = () => {
       </div>
       <div className='col-5 col-sm-5'>
         {/* base de datos */}
-        <img className='img-fluid' src={require(`../../Assets/images/carrusel1.jpg`)} />
+        <NavLink to="/publicado"><img className='img-fluid' src={require(`../../Assets/images/carrusel1.jpg`)} /></NavLink>
       </div>
       <div className='col-3 col-sm-2 d-flex flex-column align-items-center'>
         <span className='fw-bold'>Estado:</span>
