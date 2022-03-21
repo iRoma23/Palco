@@ -15,7 +15,6 @@ const Footer = () => {
             </a>  
         </div>
         <div className="col-md-3">
-          {/* <h2 className="text-center">SOBRE NOSOTROS</h2> */}
           <p className="text-justify">
             Somos una empresa dedicada al alquiler de Palcos, trabajamos como
             intermediarios entre el propietario del Palco y la persona

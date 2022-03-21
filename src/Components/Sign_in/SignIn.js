@@ -84,3 +84,4 @@ export const SignIn = () => {
     </form>
   );
 };
+export default SignIn
