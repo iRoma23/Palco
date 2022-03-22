@@ -20,7 +20,7 @@ import Pagenosotros from './Pages/Visitante/Nosotros/Pagenosotros'
 function AppPrueba() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <Routes>
         <Route path="/" element={<PropietarioHome />} />
         <Route path="/eventos" element={<Evento />} />
@@ -31,7 +31,8 @@ function AppPrueba() {
         <Route path="/registro_foto" element={<RegistroFotoPage />} />
         <Route path="*" element={<NotFoundPages />} />
       </Routes>
-      <Footer />
+      <Footer /> */}
+      <VisitanteHome />
     </>
   );
 }
