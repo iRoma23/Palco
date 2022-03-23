@@ -6,18 +6,16 @@ import equipo from "../../Assets/images/equipo1.png";
 const Nosotros = () => {
   return (
     <div className="">
-      <div className="container-md p-5">
-        <div className="row justify-content-center">
-          <img className="col-8" src={logo} alt="TuPalco" />
-        </div>
+      <div className="container-md text-center py-4">
+          <img className="img-fluid" width={400} height="auto" src={logo} alt="TuPalco" />
       </div>
-      <div className="container-md p-3">
-        <div className="row justify-content-center">
-          <div className="col-md-6 pb-3">
-            <img src={imgpalco} className="img-fluid" alt="..." />
+      <div className="container-md py-3">
+        <div className="row justify-content-center align-items-center">
+          <div className="col-md-5 text-center">
+            <img src={imgpalco} className="img-fluid" width={350} height="auto" alt="..." />
           </div>
-          <div className="col-md-6">
-            <p className="text-justify fs-3">
+          <div className="col-md-7">
+            <p className="text-md-start fs-4">
               Somos una empresa dedicada al alquiler de Palcos, trabajamos como
               intermediarios entre el propietario del Palco y la persona
               interesada en alquilar alguno brindando la mayor confiabilidad y
@@ -27,31 +25,31 @@ const Nosotros = () => {
           </div>
         </div>
       </div>
-      <div className="container-md">
+      <div className="container-md py-3">
         <div className="row"><p className="fs-2">Equipo:</p></div>
         <div className="row justify-content-center">
           <div className="col-3">
-            <figure className="justify-content-center">
-              <img src={equipo} className="" width="90" alt="equipo" />
-              <figcaption className="text-center">Romario</figcaption>
+            <figure className="figure">
+              <img src={equipo} className="figure-img img-fluid border rounded-circle" width={200} height="auto" alt="equipo" />
+              <figcaption className="figure-caption text-center fs-5">Romario</figcaption>
             </figure>
           </div>
           <div className="col-3">
-            <figure>
-              <img src={equipo} className="" width="90" alt="equipo" />
-              <figcaption className="text-center">Roberto</figcaption>
+            <figure className="figure">
+              <img src={equipo} className="figure-img img-fluid border rounded-circle" width={200} height="auto" alt="equipo" />
+              <figcaption className="figure-caption text-center fs-5">Roberto</figcaption>
             </figure>
           </div>
           <div className="col-3">
-            <figure>
-              <img src={equipo} className="" width="90" alt="equipo" />
-              <figcaption className="text-center">Ronald</figcaption>
+            <figure className="figure">
+              <img src={equipo} className="figure-img img-fluid border rounded-circle" width={200} height="auto" alt="equipo" />
+              <figcaption className="figure-caption text-center fs-5">Ronald</figcaption>
             </figure>
           </div>
           <div className="col-3">
-            <figure>
-              <img src={equipo} className="" width="90" alt="equipo" />
-              <figcaption className="text-center">Julio</figcaption>
+            <figure className="figure">
+              <img src={equipo} className="figure-img img-fluid border rounded-circle" width={200} height="auto" alt="equipo" />
+              <figcaption className="figure-caption text-center fs-5">Julio</figcaption>
             </figure>
           </div>
         </div>

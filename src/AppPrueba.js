@@ -16,6 +16,8 @@ import RegistroPorpietarioPage from "./Pages/Propietario/RegistroPalco/RegistroP
 // Visitante Page
 import VisitanteHome from './Pages/Visitante/Home/VisitanteHome'
 import Pagenosotros from './Pages/Visitante/Nosotros/Pagenosotros' 
+import VisitanteRegistro from "./Pages/Visitante/Registro/VisitanteRegistro";
+import VisitanteSignIn from "./Pages/Visitante/Sign-In/VisitanteSignIn";
 
 function AppPrueba() {
   return (

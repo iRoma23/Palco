@@ -7,7 +7,7 @@ import logo from "../../Assets/images/logo3.PNG";
 
 const Footer = () => {
   return (
-    <footer className="mt-5">
+    <footer className="">
       <div className="row align-items-center pt-3 pb-3 m-0 bg-dark text-white">
         <div className="col-md-3 text-center pb-2">
             <a href="#">

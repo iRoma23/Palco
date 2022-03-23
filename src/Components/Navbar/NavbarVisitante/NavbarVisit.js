@@ -6,7 +6,6 @@ import closeIcon from '../icons/close.svg'
 import ButtonVisit from './ButtonVisit'
 import { Link } from 'react-router-dom'
 
-
 const NavbarVisit = () => {
   const [clicked, setclicked] = useState(false);
 
