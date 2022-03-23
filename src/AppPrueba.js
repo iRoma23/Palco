@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 import NotFoundPages from "./Pages/not_found_404/NotFoundPages";
@@ -12,17 +11,20 @@ import RegistroFotoPage from "./Pages/Propietario/RegistroPalco/RegistroFotoPage
 import RegistroPalcoPage from "./Pages/Propietario/RegistroPalco/RegistroPalcoPage";
 import RegistroPorpietarioPage from "./Pages/Propietario/RegistroPalco/RegistroPorpietarioPage";
 
-
 // Visitante Page
 import VisitanteHome from './Pages/Visitante/Home/VisitanteHome'
 import Pagenosotros from './Pages/Visitante/Nosotros/Pagenosotros' 
 import VisitanteRegistro from "./Pages/Visitante/Registro/VisitanteRegistro";
 import VisitanteSignIn from "./Pages/Visitante/Sign-In/VisitanteSignIn";
 
+// Cliente Page
+import ClienteHome from "./Pages/Cliente/Home/ClienteHome";
+
+
 function AppPrueba() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <Routes>
         <Route path="/" element={<PropietarioHome />} />
         <Route path="/eventos" element={<Evento />} />
@@ -33,7 +35,8 @@ function AppPrueba() {
         <Route path="/registro_foto" element={<RegistroFotoPage />} />
         <Route path="*" element={<NotFoundPages />} />
       </Routes>
-      <Footer />
+      <Footer /> */}
+      <ClienteHome />
     </>
   );
 }
