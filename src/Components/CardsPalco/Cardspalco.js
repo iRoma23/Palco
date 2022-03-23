@@ -4,12 +4,12 @@ import imgentradapalco from "../../Assets/images/entradapalco.jpg";
 
 const Cardspalco = () => {
   return (
-    <div className="border">
-      <div className="container-md row mx-auto my-5 border">
-        <div className="col-md text-center card">
+    <div className="">
+      <div className="container-md row mx-auto my-5">
+        <div className="col-md text-center m-1 card">
           <img
             src={imgdueñopalco}
-            className="card-img-top"
+            className="card-img-top pt-3"
             alt="imgdueñopalco"
           />
           <div className="card-body">
@@ -23,10 +23,10 @@ const Cardspalco = () => {
             </a>
           </div>
         </div>
-        <div className="col-md text-center card">
+        <div className="col-md text-center m-1 card">
           <img
             src={imgentradapalco}
-            className="card-img-top"
+            className="card-img-top pt-3"
             alt="imgdueñopalco"
           />
           <div className="card-body">

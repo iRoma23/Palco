@@ -3,6 +3,7 @@ import "./App.css";
 
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
+import SignIn from "./Components/Sign_in/SignIn";
 import NotFoundPages from "./Pages/not_found_404/NotFoundPages";
 import Evento from "./Pages/Propietario/Home/Evento/Evento";
 import PropietarioHome from "./Pages/Propietario/Home/PropietarioHome";
@@ -16,11 +17,12 @@ import RegistroPorpietarioPage from "./Pages/Propietario/RegistroPalco/RegistroP
 // Visitante Page
 import VisitanteHome from './Pages/Visitante/Home/VisitanteHome'
 import Pagenosotros from './Pages/Visitante/Nosotros/Pagenosotros' 
+import VisitanteSignIn from "./Pages/Visitante/Sign-In/VisitanteSignIn";
 
 function AppPrueba() {
   return (
     <>
-      {/* <Navbar />
+      <Navbar />
       <Routes>
         <Route path="/" element={<PropietarioHome />} />
         <Route path="/eventos" element={<Evento />} />
@@ -31,8 +33,7 @@ function AppPrueba() {
         <Route path="/registro_foto" element={<RegistroFotoPage />} />
         <Route path="*" element={<NotFoundPages />} />
       </Routes>
-      <Footer /> */}
-      <VisitanteHome />
+      <Footer />
     </>
   );
 }

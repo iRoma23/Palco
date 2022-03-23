@@ -10,7 +10,7 @@ export const MenuItemsVisit = [
     cName: 'nav-links'
   },
   {
-    title: 'Registrar Palco',
+    title: 'Registrar Propiedad',
     url: 'registro_propietario',
     cName: 'nav-links'
   },
