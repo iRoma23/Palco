@@ -1,0 +1,16 @@
+.contenedor {
+  z-index: -1;
+}
+
+.shadow {
+  box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s 0s ease;
+
+}
+
+/* .shadow:hover {
+  transform: scale(1.09);
+} */
+

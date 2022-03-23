@@ -1,0 +1,18 @@
+.img-container {
+  display: flex;
+  max-height: 400px;
+  min-height: 200px;
+}
+
+.img-carrusel {
+  opacity: 0;
+  transition: 1s;
+  position: relative;
+  z-index: -1;
+  object-fit: fill;
+}
+
+.img-carrusel__loaded {
+  opacity: 1;
+  object-fit: fill;
+}

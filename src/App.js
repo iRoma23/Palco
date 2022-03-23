@@ -1,44 +1,59 @@
 import './App.css';
+import Navbar from './Components/Navbar/Navbar';
+import { SignIn } from './Components/Sign_in/SignIn';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './Pages/Home/Home'
+import NotFoundPages from './Pages/not_found_404/NotFoundPages';
+import Publicados from './Pages/Publicados/Publicados';
+import Sing_In from './Pages/Sign_in/Sing_In';
+
+import Eventos from './Pages/Eventos/Eventos';
+import RegistrarPropietario from './Pages/Registrar_Palco/RegistrarPropietario';
+import RegistrarPalco from './Pages/Registrar_Palco/RegistrarPalco';
+import RegistrarFotos from './Pages/Registrar_Palco/RegistrarFotos';
+import Publicado from './Pages/Propietario/Publicados/Publicado/Publicado';
 
 function App() {
-  return (
-    <div className="App">
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">Navbar</a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Link</a>
-            </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="#">Action</a>
-                <a className="dropdown-item" href="#">Another action</a>
-                <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-          <form className="form-inline my-2 my-lg-0">
-            <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-    </div>
+  const images = ['01.jpg', '02.jpg', '03.jpg'];
+  return (
+    <>
+
+
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/signin' element={<Sing_In />} />
+
+          <Route path='/propietario' element={<RegistrarPropietario />} />
+          <Route path='/palco' element={<RegistrarPalco />} />
+          <Route path='/foto_palco' element={<RegistrarFotos />} />
+          <Route path='/publicados' element={<Publicados />} />
+          <Route path='/publicado' element={<Publicado />} />
+          <Route path='/eventos' element={<Eventos />} />
+
+          <Route path='*' element={<NotFoundPages />} />
+        </Routes>
+
+
+      </BrowserRouter>
+
+
+      <Navbar />
+
+      <Carrusel images={images} autoplay={true} />
+      <Carrusel images={images} />
+      <Carrusel images={images} />
+
+      <SignIn />
+      <Carrusel images={images} autoplay ={true} />
+      <Carrusel images={images}/>
+      <Carrusel images={images}/>
+      <Footer />
+
+    </>
   );
 }
 
