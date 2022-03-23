@@ -7,9 +7,10 @@ export const SignIn = () => {
   return (
     <form action="#">
       <div className="container">
-        <div className="col-sm-5">
-            <div className="text-center fs-4 mb-3">
-              Iniciar Sesión
+        <div className="col-sm-5 border border-secondary border-2 rounded p-3">
+            <div className="text-center pb-2">
+              <h3>Iniciar Sesión</h3>
+              
             </div>
             <div className="col justify-content-center">
               <div className="col text-center">
