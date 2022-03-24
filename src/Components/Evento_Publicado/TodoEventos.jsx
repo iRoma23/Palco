@@ -1,6 +1,5 @@
 import React from 'react'
-<<<<<<< HEAD
-import Nuka from "nuka-carousel";
+import NavbarVisit from '../Navbar/NavbarVisitante/NavbarVisit';
 import img1 from "./img/1.jpg";
 import img2 from "./img/2.jpg";
 import img3 from "./img/3.jpg";
@@ -8,32 +7,12 @@ import img4 from "./img/4.jpg";
 
 import './main.css'
 
-=======
-import Cardspalco from '../../../Components/CardsPalco/Cardspalco'
-import Carrusel from '../../../Components/Carrusel/Carrusel'
-import Footer from '../../../Components/Footer/Footer'
-import NukaCar from '../../../Components/NukaCar/NukaCar'
-import NavbarVisit from '../../../Components/Navbar/NavbarVisitante/NavbarVisit'
-
->>>>>>> a886836999c89eb07e9f490bd005e6e3cd4ba8da
-const VisitanteHome = () => {
-
+const TodoEventos = () => {
   return (
-    <>
-<<<<<<< HEAD
-      <div classname='container-fluid p-2'>
-
-        <Nuka className='contenedor card'>
-          <img src={img1} alt='evento' />
-          <img src={img2} alt='evento' />
-          <img src={img3} alt='evento' />
-          <img src={img4} alt='evento' />
-          <img src={img3} alt='evento' />
-
-        </Nuka>
-
+      <>
+      <div>
+          <NavbarVisit/>
       </div>
-
       <div className='m-5 '>
         <h1 className=''>Mas Eventos </h1>
 
@@ -127,17 +106,9 @@ const VisitanteHome = () => {
         </div>
 
       </div>
-
-
-
-=======
-     <NavbarVisit />
-     <NukaCar />
-     <Cardspalco />
-     {/* <Footer /> */}
->>>>>>> a886836999c89eb07e9f490bd005e6e3cd4ba8da
-    </>
+      </>
+    
   )
 }
 
-export default VisitanteHome;
+export default TodoEventos

@@ -1,6 +1,6 @@
 import React from 'react'
-import './Button.css'
-import { MenuButtonItem } from './MenuItems'
+import '../Button.css'
+import { MenuButtonItem } from './MenuItemsCliente'
 import { Link } from 'react-router-dom'
 
 
@@ -14,8 +14,7 @@ const SIZES = [
   'btn--large'
 ]
 
-
-const Button = ({type, onClick, buttonStyle, buttonSize}) => {
+const ButtonCliente = ({type, onClick, buttonStyle, buttonSize}) => {
   const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
@@ -28,4 +27,4 @@ const Button = ({type, onClick, buttonStyle, buttonSize}) => {
   )
 }
 
-export default Button
+export default ButtonCliente
