@@ -8,6 +8,7 @@ const PageNosotros = () => {
     <>
         <NavbarVisit />
         <Nosotros />
+        {/* <Footer /> */}
     </>
   )
 }

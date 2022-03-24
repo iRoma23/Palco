@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import logof from "../../Assets/images/logo-facebook.png";
 import logog from "../../Assets/images/logo-google.png";
 import NavbarVisit from "../Navbar/NavbarVisitante/NavbarVisit";
+import { Link } from "react-router-dom";
 
 export const SignIn = () => {
   return (
@@ -10,11 +11,12 @@ export const SignIn = () => {
     <div>
       <NavbarVisit />
     </div>
-      <form action="#">
-        <div className="container mt-3 col col-md-6">
-          <div className="container mb-3">
-            <div className="row text-center">
-              <div className="col-12 pb-4 fs-5">Iniciar Sesión</div>
+    <form action="#">
+      <div className="container">
+        <div className="col-sm-5 border border-secondary border-2 rounded p-3">
+            <div className="text-center pb-2">
+              <h3>Iniciar Sesión</h3>
+              
             </div>
             <div className="col justify-content-center">
               <div className="col text-center">
@@ -26,9 +28,7 @@ export const SignIn = () => {
                     <div className="col-2 d-md-block">
                       <img src={logof} width="30" alt="F" />
                     </div>
-                    <div className="col text-center">
-                      Sign in with Facebook
-                    </div>
+                    <div className="col text-center">Sign in with Facebook</div>
                   </div>
                 </button>
               </div>
@@ -41,16 +41,15 @@ export const SignIn = () => {
                     <div className="col-2 d-md-block">
                       <img src={logog} width="30" alt="G" />
                     </div>
-                    <div className="col text-center">
-                      Sign in with Google
-                    </div>
+                    <div className="col text-center">Sign in with Google</div>
                   </div>
                 </button>
               </div>
             </div>
-          </div>
-          <div className="container text-center mb-3">or</div>
-          <div className="container mb-3">
+          
+
+          <div className="text-center mb-3">or</div>
+          <div className="mb-3">
             <div className="mb-3">
               <input
                 type="email"
@@ -71,8 +70,8 @@ export const SignIn = () => {
             <div id="emailHelp" class="form-text mb-3">
               <a href="#">¿Olvidaste tu contraseña?</a>
             </div>
-            <div className="container row align-items-center">
-              <button type="submit" class="btn btn-primary">
+            <div className="text-center">
+              <button type="submit" className="btn btn-primary btn-lg">
                 Ingresar
               </button>
             </div>
@@ -81,13 +80,15 @@ export const SignIn = () => {
                 ¿No tienes una cuenta?
               </div>
               <div id="emailHelp" className="form-text mb-3 col">
-                <a href="#">Registrate aquí</a>
+                <Link to="/registro-usuario">Registrate aquí</Link>
               </div>
             </div>
           </div>
         </div>
-      </form>
+      </div>
+    </form>
     </>
-
+    
   );
 };
+export default SignIn;

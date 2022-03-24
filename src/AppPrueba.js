@@ -35,9 +35,9 @@ function AppPrueba() {
           <Route path="/" element={<VisitanteHome />} />
           <Route path="/nosotros" element={<PageNosotros />} />
           <Route path="/todo-eventos" element={<TodoEventos />} />
-          <Route path="/registro-usuario" element={<RegistroUsuario />} />
-          <Route path="/sing-in" element={<SingInPage />} />
-          
+          <Route path="/login" element={< SingInPage/>} />
+          <Route path="/registro-usuario" element={< RegistroUsuario/>} />
+          SingInPage
 
         </Route>
 

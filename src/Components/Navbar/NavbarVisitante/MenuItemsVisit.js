@@ -17,7 +17,7 @@ export const MenuItemsVisit = [
  
   {
     title: 'Login',
-    url: 'registro-usuario',
+    url: 'login',
     cName: 'nav-links-mobile'
   },
 ]
