@@ -37,7 +37,7 @@ function AppPrueba() {
           <Route path="/todo-eventos" element={<TodoEventos />} />
           <Route path="/login" element={< SingInPage/>} />
           <Route path="/registro-usuario" element={< RegistroUsuario/>} />
-          SingInPage
+          {/* SingInPage */}
 
         </Route>
 
@@ -58,6 +58,7 @@ function AppPrueba() {
 
 
       <Footer />
+      
     </>
   );
 }

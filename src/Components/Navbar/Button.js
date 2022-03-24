@@ -20,11 +20,11 @@ const Button = ({type, onClick, buttonStyle, buttonSize}) => {
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <button className={`button ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick} type={type}>
-      <Link className='decoration-none' to='/'>
+    <Link className='decoration-none' to='/'>
+      <button className={`button ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick} type={type}>
         {MenuButtonItem}
-      </Link>
-    </button>
+      </button>
+    </Link>
   )
 }
 
