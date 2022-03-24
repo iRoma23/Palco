@@ -3,6 +3,7 @@ import "./App.css";
 import TodoEventos from "./Components/Evento_Publicado/TodoEventos";
 
 import Footer from "./Components/Footer/Footer";
+import ModalResarva from "./Components/Modal/ModalResarva";
 import Navbar from "./Components/Navbar/Navbar";
 import NavbarVisit from "./Components/Navbar/NavbarVisitante/NavbarVisit";
 import Nosotros from "./Components/Nosotros/Nosotros";
@@ -37,7 +38,8 @@ function AppPrueba() {
           <Route path="/todo-eventos" element={<TodoEventos />} />
           <Route path="/login" element={< SingInPage/>} />
           <Route path="/registro-usuario" element={< RegistroUsuario/>} />
-          SingInPage
+          <Route path="/modal" element={< ModalResarva/>} />
+         
 
         </Route>
 

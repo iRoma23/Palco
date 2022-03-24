@@ -71,9 +71,9 @@ export const SignIn = () => {
               <a href="#">¿Olvidaste tu contraseña?</a>
             </div>
             <div className="text-center">
-              <button type="submit" className="btn btn-primary btn-lg">
+              <Link to=""type="submit" className="btn btn-primary btn-lg">
                 Ingresar
-              </button>
+              </Link>
             </div>
             <div className="row text-center">
               <div id="emailHelp" className="form-text mb-3 col">

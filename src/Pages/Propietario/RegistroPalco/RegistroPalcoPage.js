@@ -5,7 +5,7 @@ import palco from './img/palco.jpg'
 const RegistroPalcoPage = () => {
   return (
     <div>
-       <div className="container p-2">
+      <div className="container p-2">
         <h3 className="text-muted mt-2 mb-3">
           RENTA TU PALCO PARA LOS MEJORES PARTIDOS DE LA LIGA I - 2022
         </h3>
@@ -99,7 +99,7 @@ const RegistroPalcoPage = () => {
                 {/* Aca va el Boton */}
                 <div className=" gap-2 d-md-flex justify-content-md-end mt-2">
                   <Link type="button" class="btn btn-primary" to="/registro_propietario">
-                  Atras
+                    Atras
                   </Link>
                   <Link type="button" class="btn btn-primary " to="/registro_foto">
                     Siguiente
