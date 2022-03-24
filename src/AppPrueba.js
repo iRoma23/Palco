@@ -1,7 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
+import Nosotros from "./Components/Nosotros/Nosotros";
 import NotFoundPages from "./Pages/not_found_404/NotFoundPages";
 import Evento from "./Pages/Propietario/Home/Evento/Evento";
 import PropietarioHome from "./Pages/Propietario/Home/PropietarioHome";
@@ -14,17 +16,13 @@ import RegistroPorpietarioPage from "./Pages/Propietario/RegistroPalco/RegistroP
 // Visitante Page
 import VisitanteHome from './Pages/Visitante/Home/VisitanteHome'
 import Pagenosotros from './Pages/Visitante/Nosotros/Pagenosotros' 
-import VisitanteRegistro from "./Pages/Visitante/Registro/VisitanteRegistro";
-import VisitanteSignIn from "./Pages/Visitante/Sign-In/VisitanteSignIn";
-
 // Cliente Page
-import ClienteHome from "./Pages/Cliente/Home/ClienteHome";
-
+import ClienteHome from '../src/Pages/Cliente/Home/ClienteHome'
 
 function AppPrueba() {
   return (
     <>
-      {/* <Navbar />
+      <Navbar />
       <Routes>
         <Route path="/" element={<PropietarioHome />} />
         <Route path="/eventos" element={<Evento />} />
@@ -35,8 +33,7 @@ function AppPrueba() {
         <Route path="/registro_foto" element={<RegistroFotoPage />} />
         <Route path="*" element={<NotFoundPages />} />
       </Routes>
-      <Footer /> */}
-      <ClienteHome />
+      <Footer />
     </>
   );
 }
