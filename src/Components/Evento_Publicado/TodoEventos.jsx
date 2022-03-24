@@ -1,25 +1,18 @@
 import React from 'react'
-
-import Nuka from "nuka-carousel";
+import NavbarVisit from '../Navbar/NavbarVisitante/NavbarVisit';
 import img1 from "./img/1.jpg";
 import img2 from "./img/2.jpg";
 import img3 from "./img/3.jpg";
 import img4 from "./img/4.jpg";
 
 import './main.css'
-import NukaNav from '../../../Components/Navbar/NukaNav/NukaNav';
 
-
-const PropietarioHome = () => {
-
+const TodoEventos = () => {
   return (
-    <>
-      <div >
-
-        <NukaNav />
-
+      <>
+      <div>
+          <NavbarVisit/>
       </div>
-
       <div className='m-5 '>
         <h1 className=''>Mas Eventos </h1>
 
@@ -113,11 +106,9 @@ const PropietarioHome = () => {
         </div>
 
       </div>
-
-
-
-    </>
+      </>
+    
   )
 }
 
-export default PropietarioHome;
+export default TodoEventos

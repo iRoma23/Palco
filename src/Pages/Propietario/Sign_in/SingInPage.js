@@ -7,9 +7,9 @@ import { SignIn } from '../../../Components/Sign_in/SignIn'
 const SingInPage = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <SignIn />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

@@ -1,7 +1,12 @@
 export const MenuItemsVisit = [
   {
+    title: 'Inicio',
+    url: '/',
+    cName: 'nav-links'
+  },
+  {
     title: 'Eventos',
-    url: 'eventos',
+    url: 'todo-eventos',
     cName: 'nav-links'
   },
   {
@@ -9,14 +14,10 @@ export const MenuItemsVisit = [
     url: 'nosotros',
     cName: 'nav-links'
   },
-  {
-    title: 'Registrar Propiedad',
-    url: 'registro_propietario',
-    cName: 'nav-links'
-  },
+ 
   {
     title: 'Login',
-    url: 'registro_usuario',
+    url: 'login',
     cName: 'nav-links-mobile'
   },
 ]

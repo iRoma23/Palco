@@ -3,14 +3,14 @@ import Footer from '../../../Components/Footer/Footer'
 import NavbarVisit from '../../../Components/Navbar/NavbarVisitante/NavbarVisit'
 import Nosotros from '../../../Components/Nosotros/Nosotros'
 
-const Pagenosotros = () => {
+const PageNosotros = () => {
   return (
     <>
         <NavbarVisit />
         <Nosotros />
-        <Footer />
+        {/* <Footer /> */}
     </>
   )
 }
 
-export default Pagenosotros
+export default PageNosotros

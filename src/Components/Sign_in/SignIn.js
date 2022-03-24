@@ -2,9 +2,15 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logof from "../../Assets/images/logo-facebook.png";
 import logog from "../../Assets/images/logo-google.png";
+import NavbarVisit from "../Navbar/NavbarVisitante/NavbarVisit";
+import { Link } from "react-router-dom";
 
 export const SignIn = () => {
   return (
+    <>
+    <div>
+      <NavbarVisit />
+    </div>
     <form action="#">
       <div className="container">
         <div className="col-sm-5 border border-secondary border-2 rounded p-3">
@@ -74,13 +80,15 @@ export const SignIn = () => {
                 ¿No tienes una cuenta?
               </div>
               <div id="emailHelp" className="form-text mb-3 col">
-                <a href="#">Registrate aquí</a>
+                <Link to="/registro-usuario">Registrate aquí</Link>
               </div>
             </div>
           </div>
         </div>
       </div>
     </form>
+    </>
+    
   );
 };
 export default SignIn;
