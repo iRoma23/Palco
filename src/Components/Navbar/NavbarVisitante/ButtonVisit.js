@@ -20,7 +20,7 @@ const ButtonVisit = ({type, onClick, buttonStyle, buttonSize}) => {
 
   return (
     <button className={`button ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick} type={type}>
-      <Link className='decoration-none' to='/'>
+      <Link className='decoration-none' to='/registro-usuario'>
         {MenuButtonItem}
       </Link>
     </button>

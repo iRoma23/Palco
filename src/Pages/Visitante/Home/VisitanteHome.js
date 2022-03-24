@@ -1,7 +1,9 @@
 import React from 'react'
 import Carrusel from '../../../Components/Carrusel/Carrusel'
 import Infohome from '../../../Components/InfoHome/Infohome'
+
 import NavbarVisit from '../../../Components/Navbar/NavbarVisitante/NavbarVisit'
+import NukaNav from '../../../Components/Navbar/NukaNav/NukaNav'
 
 
 const VisitanteHome = () => {
@@ -9,7 +11,8 @@ const VisitanteHome = () => {
   return (
     <>
      <NavbarVisit />
-     <Carrusel images={images} autoplay={true} />
+     {/* <Carrusel images={images} autoplay={true} /> */}
+     <NukaNav />
      <Infohome />
     </>
   )
