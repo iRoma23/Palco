@@ -15,10 +15,10 @@ export const MenuItemsCliente = [
     cName: 'nav-links'
   },
   {
-    title: 'Perfil',
+    title: 'Logout',
     url: 'perfil_cliente',
     cName: 'nav-links-mobile'
   },
 ]
 
-export const MenuButtonItem = 'Perfil';
+export const MenuButtonItem = 'Logout';

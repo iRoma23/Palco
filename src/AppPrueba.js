@@ -38,8 +38,12 @@ function AppPrueba() {
           <Route path="/todo-eventos" element={<TodoEventos />} />
           <Route path="/login" element={< SingInPage/>} />
           <Route path="/registro-usuario" element={< RegistroUsuario/>} />
+<<<<<<< HEAD
           <Route path="/modal" element={< ModalResarva/>} />
          
+=======
+          {/* SingInPage */}
+>>>>>>> d2547bf8a24c66bed7004967b8efa00ab3a2d86e
 
         </Route>
 
@@ -60,6 +64,7 @@ function AppPrueba() {
 
 
       <Footer />
+      
     </>
   );
 }
