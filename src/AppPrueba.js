@@ -23,7 +23,7 @@ function AppPrueba() {
   return (
     <>
       <Navbar />
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<PropietarioHome />} />
         <Route path="/eventos" element={<Evento />} />
         <Route path="/publicados" element={<Publicados />} />
@@ -32,8 +32,10 @@ function AppPrueba() {
         <Route path="/registro_palco" element={<RegistroPalcoPage />} />
         <Route path="/registro_foto" element={<RegistroFotoPage />} />
         <Route path="*" element={<NotFoundPages />} />
-      </Routes>
+      </Routes> */}
+      <ClienteHome />
       <Footer />
+      
     </>
   );
 }
