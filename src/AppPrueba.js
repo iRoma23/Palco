@@ -3,14 +3,13 @@ import "./App.css";
 import TodoEventos from "./Components/Evento_Publicado/TodoEventos";
 
 import Footer from "./Components/Footer/Footer";
+import MisReservas from "./Components/MisReservas/MisReservas";
 import ModalResarva from "./Components/Modal/ModalResarva";
-import Navbar from "./Components/Navbar/Navbar";
-import NavbarVisit from "./Components/Navbar/NavbarVisitante/NavbarVisit";
-import Nosotros from "./Components/Nosotros/Nosotros";
+
 import RegistroUsuario from "./Components/Registro/RegistroUsuario";
 import NotFoundPages from "./Pages/not_found_404/NotFoundPages";
-import Evento from "./Pages/Propietario/Home/Evento/Evento";
-import PropietarioHome from "./Pages/Propietario/Home/PropietarioHome";
+
+
 import Publicado from "./Pages/Propietario/Publicados/Publicado/Publicado";
 import Publicados from "./Pages/Propietario/Publicados/Publicados";
 import RegistroFotoPage from "./Pages/Propietario/RegistroPalco/RegistroFotoPage";
@@ -21,7 +20,7 @@ import SingInPage from "./Pages/Propietario/Sign_in/SingInPage";
 // Visitante Page
 import VisitanteHome from './Pages/Visitante/Home/VisitanteHome'
 import PageNosotros from './Pages/Visitante/Nosotros/PageNosotros'
-import VisitanteSignIn from "./Pages/Visitante/Sign-In/VisitanteSignIn";
+
 
 function AppPrueba() {
   return (
@@ -39,7 +38,7 @@ function AppPrueba() {
           <Route path="/login" element={< SingInPage/>} />
           <Route path="/registro-usuario" element={< RegistroUsuario/>} />
           <Route path="/modal" element={< ModalResarva/>} />
-         
+          <Route path="/mis-reservas" element={< MisReservas/>} />
 
         </Route>
 

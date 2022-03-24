@@ -19,7 +19,7 @@ const NavbarVisit = () => {
       <nav className="NavbarItems">
        
           <Link className="decoration-none text-center" to="/">
-            <img className="img-fluid col-6" src={logo2} alt="TuPalco" />
+          <img className="img-fluid col-6" src={logo2} alt="TuPalco" />
           </Link>
         <div className="menu-icon" onClick={handleClick}>
           <img

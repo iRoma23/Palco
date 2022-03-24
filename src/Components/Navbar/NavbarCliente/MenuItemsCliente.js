@@ -1,14 +1,14 @@
 export const MenuItemsCliente = [
   {
     title: 'Eventos',
-    url: 'eventos',
+    url: 'todo-eventos',
     cName: 'nav-links'
   },
-  {
-    title: 'Nosotros',
-    url: 'nosotros',
-    cName: 'nav-links'
-  },
+  // {
+  //   title: 'Nosotros',
+  //   url: 'nosotros',
+  //   cName: 'nav-links'
+  // },
   {
     title: 'Mis Reservas',
     url: 'reserva_cliente',
@@ -16,7 +16,7 @@ export const MenuItemsCliente = [
   },
   {
     title: 'Logout',
-    url: 'perfil_cliente',
+    url: '/',
     cName: 'nav-links-mobile'
   },
 ]
