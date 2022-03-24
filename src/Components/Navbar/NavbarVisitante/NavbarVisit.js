@@ -17,7 +17,7 @@ const NavbarVisit = () => {
     <header>
       <nav className='NavbarItems'>
         
-      <Link className='decoration-none' to='/login'><h1 className='navbar-title'>Tu Palco</h1></Link>
+      <Link className='decoration-none' to='/'><h1 className='navbar-title'>Tu Palco</h1></Link>
        
 
         <div className='menu-icon' onClick={handleClick}>
