@@ -57,7 +57,7 @@ function AppPrueba() {
       </Routes>
 
 
-
+      {/* <PageInfoEvento />*/}
       <Footer />
       
     </>

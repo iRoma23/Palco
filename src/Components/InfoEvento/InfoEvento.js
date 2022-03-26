@@ -27,7 +27,7 @@ const InfoEvento = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-9">
+          <div className="col-md-9 border-start px-5">
             <h3>Palcos disponibles:</h3>
             <div className="row align-items-center border-top mb-3">
               <div className="col-md-3">
