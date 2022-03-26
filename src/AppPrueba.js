@@ -7,6 +7,7 @@ import MisReservas from "./Components/MisReservas/MisReservas";
 import ModalResarva from "./Components/Modal/ModalResarva";
 
 import RegistroUsuario from "./Components/Registro/RegistroUsuario";
+import PageInfoEvento from "./Pages/Cliente/Info_Evento/PageInfoEvento";
 import NotFoundPages from "./Pages/not_found_404/NotFoundPages";
 
 
@@ -54,7 +55,6 @@ function AppPrueba() {
 
         <Route path="*" element={<NotFoundPages />} />
       </Routes>
-
 
 
 
