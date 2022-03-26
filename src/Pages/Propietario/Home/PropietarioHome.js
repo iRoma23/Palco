@@ -9,6 +9,7 @@ import img4 from "./img/4.jpg";
 import './main.css'
 import Navbar from '../../../Components/Navbar/Navbar';
 import NukaCar from '../../../Components/NukaCar/NukaCar';
+import TodoEventos from '../../../Components/Evento_Publicado/TodoEventos';
 
 const PropietarioHome = () => {
 
@@ -17,8 +18,8 @@ const PropietarioHome = () => {
       <div >
 
         <NukaCar />
-
-      </div>
+        <TodoEventos />
+      {/* </div>
 
       <div className='m-5 '>
         <h1 className=''>Mas Eventos </h1>
@@ -112,7 +113,7 @@ const PropietarioHome = () => {
           </div>
         </div>
 
-      </div>
+      </div> */}
 
 
 

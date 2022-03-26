@@ -19,7 +19,7 @@ const Cardspalco = () => {
               Administramos tu propiedad para que te sientas tranquilo y
               obtengas ingresos desde la comodidad de tu hogar.
             </p>
-            <NavLink to="/registro_propietario" className="btn btn-primary">
+            <NavLink to="/login" className="btn btn-primary">
               Registrar mi propiedad
             </NavLink>
           </div>
