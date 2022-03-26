@@ -3,6 +3,7 @@ import "./App.css";
 import TodoEventos from "./Components/Evento_Publicado/TodoEventos";
 
 import Footer from "./Components/Footer/Footer";
+import InfoEvento from "./Components/InfoEvento/InfoEvento";
 import MisReservas from "./Components/MisReservas/MisReservas";
 import ModalResarva from "./Components/Modal/ModalResarva";
 
@@ -36,6 +37,7 @@ function AppPrueba() {
           <Route path="/" element={<VisitanteHome />} />
           <Route path="/nosotros" element={<PageNosotros />} />
           <Route path="/todo-eventos" element={<TodoEventos />} />
+          <Route path="/info-evento" element={<InfoEvento />} />
           <Route path="/login" element={< SingInPage/>} />
           <Route path="/registro-usuario" element={< RegistroUsuario/>} />
           <Route path="/modal" element={< ModalResarva/>} />

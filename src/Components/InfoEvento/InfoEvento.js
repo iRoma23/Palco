@@ -7,11 +7,15 @@ import vip from "./img/palco_vip.jpg"
 import gold from "./img/palco_gold.jpg"
 import premium from "./img/palco_premium.jpg"
 import "./main.css";
+import { NavLink } from "react-router-dom";
+import NavbarVisit from '../Navbar/NavbarVisitante/NavbarVisit'
 
 const InfoEvento = () => {
   return (
     <>
+    <NavbarVisit/>
       <div className="m-5">
+
         <div className="contenedor row row-cols-1 row-cols-md-3 g-4 ">
           <div className="col-md-3">
             <h3>Información del Evento:</h3>
@@ -23,7 +27,8 @@ const InfoEvento = () => {
               </div>
               <div className="card-footer d-flex flex-row justify-content-between">
                 <small className="text-muted">Precio desde: s/ 550.00</small>
-                <button className="btn btn-outline-dark">Más eventos</button>
+               
+                <NavLink to="/todo-eventos" className='btn btn-outline-dark'>ventos</NavLink>
               </div>
             </div>
           </div>
