@@ -6,9 +6,9 @@ import { SignIn } from '../../../Components/Sign_in/SignIn'
 const VisitanteSignIn = () => {
   return (
     <>
-      <NavbarVisit />
+      {/* <NavbarVisit /> */}
       <SignIn />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

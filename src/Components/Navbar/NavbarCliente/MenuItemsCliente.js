@@ -11,7 +11,7 @@ export const MenuItemsCliente = [
   // },
   {
     title: 'Mis Reservas',
-    url: 'reserva_cliente',
+    url: '/reserva_cliente',
     cName: 'nav-links'
   },
   {

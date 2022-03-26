@@ -7,9 +7,8 @@ import img3 from "./img/3.jpg";
 import img4 from "./img/4.jpg";
 
 import './main.css'
+import Navbar from '../../../Components/Navbar/Navbar';
 import NukaCar from '../../../Components/NukaCar/NukaCar';
-
-
 
 const PropietarioHome = () => {
 

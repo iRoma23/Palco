@@ -7,9 +7,9 @@ import RegistroUsuario from '../../../Components/Registro/RegistroUsuario'
 const VisitanteRegistro = () => {
   return (
     <>
-      <NavbarVisit />
+      {/* <NavbarVisit /> */}
       <RegistroUsuario />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

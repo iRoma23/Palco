@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import NavbarVisit from '../Navbar/NavbarVisitante/NavbarVisit';
 import img1 from "./img/1.jpg";
 import img2 from "./img/2.jpg";
@@ -10,9 +11,9 @@ import './main.css'
 const TodoEventos = () => {
   return (
       <>
-      <div>
+      {/* <div>
           <NavbarVisit/>
-      </div>
+      </div> */}
       <div className='m-5 '>
         <h1 className=''>Mas Eventos </h1>
 
@@ -29,7 +30,7 @@ const TodoEventos = () => {
               </div>
               <div className="card-footer d-flex flex-row justify-content-between">
                 <small className="text-muted">Precio: s/ 50.00</small>
-                <button className='btn btn-outline-dark'>Ver Palco</button>
+                <NavLink to="/info-evento" className='btn btn-outline-dark'>Ver Palco</NavLink>
               </div>
 
 
@@ -44,7 +45,7 @@ const TodoEventos = () => {
               </div>
               <div className="card-footer d-flex flex-row justify-content-between">
                 <small className="text-muted">Precio: s/ 50.00</small>
-                <button className='btn btn-outline-dark'>Ver Palco</button>
+                <NavLink to="/info-evento" className='btn btn-outline-dark'>Ver Palco</NavLink>
               </div>
             </div>
           </div>
@@ -57,7 +58,7 @@ const TodoEventos = () => {
               </div>
               <div className="card-footer d-flex flex-row justify-content-between">
                 <small className="text-muted">Precio: s/ 50.00</small>
-                <button className='btn btn-outline-dark'>Ver Palco</button>
+                <NavLink to="/info-evento" className='btn btn-outline-dark'>Ver Palco</NavLink>
               </div>
             </div>
           </div>
@@ -73,7 +74,7 @@ const TodoEventos = () => {
               </div>
               <div className="card-footer d-flex flex-row justify-content-between">
                 <small className="text-muted">Precio: s/ 50.00</small>
-                <button className='btn btn-outline-dark'>Ver Palco</button>
+                <NavLink to="/info-evento" className='btn btn-outline-dark'>Ver Palco</NavLink>
               </div>
             </div>
           </div>
@@ -86,7 +87,7 @@ const TodoEventos = () => {
               </div>
               <div className="card-footer d-flex flex-row justify-content-between">
                 <small className="text-muted">Precio: s/ 50.00</small>
-                <button className='btn btn-outline-dark'>Ver Palco</button>
+                <NavLink to="/info-evento" className='btn btn-outline-dark'>Ver Palco</NavLink>
               </div>
             </div>
           </div>
@@ -99,7 +100,7 @@ const TodoEventos = () => {
               </div>
               <div className="card-footer d-flex flex-row justify-content-between">
                 <small className="text-muted">Precio: s/ 50.00</small>
-                <button className='btn btn-outline-dark'>Ver Palco</button>
+                <NavLink to="/info-evento" className='btn btn-outline-dark'>Ver Palco</NavLink>
               </div>
             </div>
           </div>

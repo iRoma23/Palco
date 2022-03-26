@@ -8,10 +8,16 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import AppPrueba from './AppPrueba';
 import { BrowserRouter } from 'react-router-dom';
 
+// redux
+import { Provider } from 'react-redux';
+import store from './app/store' 
+
 ReactDOM.render(
-  <BrowserRouter>
-    <AppPrueba />
-  </BrowserRouter>,
+  <Provider store={store}>
+    <BrowserRouter>
+      <AppPrueba />
+    </BrowserRouter>
+  </Provider>,
   document.getElementById('root')
 );
 

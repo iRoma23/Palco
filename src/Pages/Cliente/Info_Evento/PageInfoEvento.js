@@ -5,7 +5,7 @@ import NavbarCliente from '../../../Components/Navbar/NavbarCliente/NavbarClient
 const PageInfoEvento = () => {
   return (
     <>
-     <NavbarCliente />
+     {/* <NavbarCliente /> */}
      <InfoEvento />
     </>
   )
