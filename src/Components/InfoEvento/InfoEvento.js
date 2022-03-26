@@ -28,7 +28,7 @@ const InfoEvento = () => {
               <div className="card-footer d-flex flex-row justify-content-between">
                 <small className="text-muted">Precio desde: s/ 550.00</small>
                
-                <NavLink to="/todo-eventos" className='btn btn-outline-dark'>ventos</NavLink>
+                <NavLink to="/todo-eventos" className='btn btn-outline-dark'>Eventos</NavLink>
               </div>
             </div>
           </div>
