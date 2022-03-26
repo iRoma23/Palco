@@ -5,10 +5,12 @@ import menuIcon from './icons/menu.svg'
 import closeIcon from './icons/close.svg'
 import Button from './Button'
 import logoNav from '../../Assets/images/logo2.PNG'
+
 // react-router-dom
-import { Link } from 'react-router-dom'
-
-
+import { Link, useNavigate } from 'react-router-dom'
+// redux
+import { useDispatch } from 'react-redux'
+import { loginCliente, loginPropietario, logout } from '../../features/userSlice'
 const Navbar = () => {
   const [clicked, setclicked] = useState(false);
 
@@ -16,14 +18,22 @@ const Navbar = () => {
     setclicked(!clicked)
   }
 
+  const dispatch = useDispatch();
+  let navigate = useNavigate();
+
+  const handleClickLogout = () => {
+    dispatch(logout());
+    navigate('/')
+  }
+
   return (
     <header>
       <nav className='NavbarItems'>
-        
-      <Link className='decoration-none' to='/home-propietario'>
-        <h1 className='navbar-title'>Tu Palco</h1>
-      </Link>
-       
+
+        <Link className='decoration-none' to='/home-propietario'>
+          <h1 className='navbar-title'>Tu Palco</h1>
+        </Link>
+
 
         <div className='menu-icon' onClick={handleClick}>
           <img className='menu-icon__img' src={clicked ? closeIcon : menuIcon} />
@@ -36,8 +46,12 @@ const Navbar = () => {
               </li>
             )
           })}
+
+          <li>
+            <button className='nav-links-mobile nav.item' onClick={handleClickLogout}>Salir</button>
+          </li>
         </ul>
-        <Button ></Button>
+        <Button onClick={handleClickLogout} ></Button>
       </nav>
       <div className='fixed'></div>
     </header>

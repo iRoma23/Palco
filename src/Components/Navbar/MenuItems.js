@@ -14,11 +14,11 @@ export const MenuItems = [
     url: '/registro_propietario',
     cName: 'nav-links'
   },
-  {
-    title: 'Salir',
-    url: '/',
-    cName: 'nav-links-mobile'
-  },
+  // {
+  //   title: 'Salir',
+  //   url: '/',
+  //   cName: 'nav-links-mobile'
+  // },
 ]
 
 export const MenuButtonItem = 'Salir';
