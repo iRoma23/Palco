@@ -6,18 +6,18 @@ export const MenuItemsVisit = [
   },
   {
     title: 'Eventos',
-    url: 'todo-eventos',
+    url: '/todo-eventos',
     cName: 'nav-links'
   },
   {
     title: 'Nosotros',
-    url: 'nosotros',
+    url: '/nosotros',
     cName: 'nav-links'
   },
  
   {
     title: 'Login',
-    url: 'login',
+    url: '/login',
     cName: 'nav-links-mobile'
   },
 ]

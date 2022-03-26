@@ -8,6 +8,7 @@ import img4 from "./img/4.jpg";
 
 import './main.css'
 import NukaNav from '../../../Components/Navbar/NukaNav/NukaNav';
+import Navbar from '../../../Components/Navbar/Navbar';
 
 
 const PropietarioHome = () => {

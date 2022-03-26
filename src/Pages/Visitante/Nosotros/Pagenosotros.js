@@ -6,7 +6,7 @@ import Nosotros from '../../../Components/Nosotros/Nosotros'
 const PageNosotros = () => {
   return (
     <>
-        <NavbarVisit />
+        {/* <NavbarVisit /> */}
         <Nosotros />
         {/* <Footer /> */}
     </>

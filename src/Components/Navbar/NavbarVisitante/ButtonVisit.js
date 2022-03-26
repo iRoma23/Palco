@@ -19,7 +19,7 @@ const ButtonVisit = ({type, onClick, buttonStyle, buttonSize}) => {
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <Link className='decoration-none' to='/login'>
+    <Link className='decoration-none display-none' to='/login'>
       <button className={`button ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick} type={type}>
         {MenuButtonItem}
       </button>

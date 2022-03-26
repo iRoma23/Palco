@@ -4,6 +4,7 @@ import '../Navbar.css'
 import menuIcon from '../icons/menu.svg'
 import closeIcon from '../icons/close.svg'
 import ButtonCliente from './ButtonCliente'
+// react-router-dom
 import { Link } from 'react-router-dom'
 
 const NavbarCliente = () => {
@@ -27,7 +28,7 @@ const NavbarCliente = () => {
           {MenuItemsCliente.map((item, index) => {
             return (
               <li key={index}>
-                <a className={`${item.cName} nav-item`} href={item.url}>{item.title}</a>
+                <Link className={`${item.cName} nav-item`} href={item.url}>{item.title}</Link>
               </li>
             )
           })}

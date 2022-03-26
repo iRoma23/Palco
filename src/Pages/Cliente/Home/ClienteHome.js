@@ -8,7 +8,7 @@ const ClienteHome = () => {
     const images = ['01.jpg', '02.jpg', '03.jpg'];
   return (
       <>
-        <NavbarCliente />
+        {/* <NavbarCliente /> */}
         <Carrusel images={images} autoplay={true} />
         <Cardspalco />
         <Footer />

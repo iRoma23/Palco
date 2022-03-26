@@ -10,9 +10,9 @@ import './main.css'
 const TodoEventos = () => {
   return (
       <>
-      <div>
+      {/* <div>
           <NavbarVisit/>
-      </div>
+      </div> */}
       <div className='m-5 '>
         <h1 className=''>Mas Eventos </h1>
 
