@@ -1,16 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import NavbarVisit from '../../../Components/Navbar/NavbarVisitante/NavbarVisit'
 import palco from './img/palco.jpg'
 
 const RegistroPalcoPage = () => {
   return (
-    <div>
-       <div className="container p-2">
-        <h3 className="text-muted mt-2 mb-3">
+    <>
+      {/* <NavbarVisit /> */}
+      <div className="card-body">
+        <h3 className="text-muted p-1 text-center">
           RENTA TU PALCO PARA LOS MEJORES PARTIDOS DE LA LIGA I - 2022
         </h3>
       </div>
-      <div className="container">
+      <div className="card">
         <div className="card-body row g-0">
           <div className=" card-body col-md-6 ">
             <div className="text-center">
@@ -19,7 +21,7 @@ const RegistroPalcoPage = () => {
             <img
               src={palco}
               className="img-fluid rounded img-thumbnail"
-              height="100%"
+             
               alt="Imagen Estadio"
             />
           </div>
@@ -29,8 +31,8 @@ const RegistroPalcoPage = () => {
             <div className="card-body">
               <h3 className="text-center">REGISTRA TU PALCO</h3>
             </div>
-            <div className="container">
-              <div className="container">
+            <div className="card p-3">
+              <div className="">
                 <select
                   class="form-select form-select-lg mb-3"
                   aria-label=".form-select-lg example"
@@ -47,7 +49,7 @@ const RegistroPalcoPage = () => {
                   type="text"
                   class="form-control"
                   id="exampleFormControlInput1"
-                  placeholder="Numero o Nombre"
+                  placeholder="Numero de Palco"
                 />
               </div>
               {/* Aca va los checkbox */}
@@ -99,24 +101,24 @@ const RegistroPalcoPage = () => {
                 {/* Aca va el Boton */}
                 <div className=" gap-2 d-md-flex justify-content-md-end mt-2">
                   <Link type="button" class="btn btn-primary" to="/registro_propietario">
-                  Atras
+                    Atras
                   </Link>
-                  <Link type="button" class="btn btn-primary " to="/registro_foto">
-                    Siguiente
+                  <Link type="button" class="btn btn-primary " to="/login">
+                    Registrar
                   </Link>
+
                 </div>
+                <p className="text-center ">
+                  <small className="text-muted">Last updated 3 mins ago</small>
+                </p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="container mt-3">
-          <p className="text-center ">
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </p>
-        </div>
+
       </div>
-    </div>
+    </>
   )
 }
 

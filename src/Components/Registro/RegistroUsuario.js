@@ -5,9 +5,6 @@ import NavbarVisit from "../Navbar/NavbarVisitante/NavbarVisit";
 const RegistroUsuario = () => {
   return (
     <>
-    <div>
-      <NavbarVisit />
-    </div>
       <form className="" action="#">
         <div className="container">
           <div className="col-md-6 p-2 border border-secondary border-2 rounded">

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import imgdueñopalco from "../../Assets/images/dueñopalco.jpg";
 import imgentradapalco from "../../Assets/images/entradapalco.jpg";
 
@@ -18,9 +19,9 @@ const Cardspalco = () => {
               Administramos tu propiedad para que te sientas tranquilo y
               obtengas ingresos desde la comodidad de tu hogar.
             </p>
-            <a href="#" className="btn btn-primary">
+            <NavLink to="/registro_propietario" className="btn btn-primary">
               Registrar mi propiedad
-            </a>
+            </NavLink>
           </div>
         </div>
         <div className="col-md text-center m-1 card">
@@ -35,9 +36,9 @@ const Cardspalco = () => {
               Disfruta de los mejores partidos comodamente y con la mejor vista
               desde nuestros palcos junto a tu familia y amigos.
             </p>
-            <a href="#" className="btn btn-primary">
+            <NavLink to="/todo-eventos" className="btn btn-primary">
               Alquilar un Palco
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>

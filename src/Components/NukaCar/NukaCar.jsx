@@ -1,12 +1,12 @@
 import React from 'react'
 
 import Nuka from "nuka-carousel";
-import img1 from "./img/1.jpg";
+import img1 from "./img/ban1.jpg";
 import img2 from "./img/2.jpg";
 import img3 from "./img/3.jpg";
 import img4 from "./img/4.jpg";
 
-const NukaNav = () => {
+const NukaCar = () => {
   return (
     <div classname='container-fluid p-2'>
 
@@ -23,4 +23,4 @@ const NukaNav = () => {
   )
 }
 
-export default NukaNav
+export default NukaCar

@@ -4,6 +4,7 @@ import './Navbar.css'
 import menuIcon from './icons/menu.svg'
 import closeIcon from './icons/close.svg'
 import Button from './Button'
+import logoNav from '../../Assets/images/logo2.PNG'
 // react-router-dom
 import { Link } from 'react-router-dom'
 
@@ -19,7 +20,9 @@ const Navbar = () => {
     <header>
       <nav className='NavbarItems'>
         
-      <Link className='decoration-none' to='/home-propietario'><h1 className='navbar-title'>Tu Palco</h1></Link>
+      <Link className='decoration-none' to='/home-propietario'>
+        <h1 className='navbar-title'>Tu Palco</h1>
+      </Link>
        
 
         <div className='menu-icon' onClick={handleClick}>
@@ -34,7 +37,7 @@ const Navbar = () => {
             )
           })}
         </ul>
-        <Button></Button>
+        <Button ></Button>
       </nav>
       <div className='fixed'></div>
     </header>

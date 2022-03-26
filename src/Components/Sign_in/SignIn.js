@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import logof from "../../Assets/images/logo-facebook.png";
 import logog from "../../Assets/images/logo-google.png";
 // react-router-dom
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // redux
 import { useDispatch } from "react-redux";
 import { loginCliente } from "../../features/userSlice";
@@ -15,6 +15,8 @@ export const SignIn = () => {
 
   const dispatch = useDispatch();
 
+  let navigate = useNavigate(); 
+
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(loginCliente({
@@ -22,10 +24,12 @@ export const SignIn = () => {
       password: password,
       loggedIn: 'cliente'
     }));
+    navigate('/home-propietario')
   }
 
   return (
     <>
+    
       <form action="#" onSubmit={(e) => handleSubmit(e)}>
         <div className="container">
           <div className="col-sm-5 border border-secondary border-2 rounded p-3">
@@ -90,11 +94,9 @@ export const SignIn = () => {
                 <a href="#">¿Olvidaste tu contraseña?</a>
               </div>
               <div className="text-center">
-                {/* <Link to='/home-propietario'> */}
                   <button type="submit" className="btn btn-primary btn-lg">
                     Ingresar
                   </button>
-                {/* </Link> */}
               </div>
               <div className="row text-center">
                 <div id="emailHelp" className="form-text mb-3 col">
