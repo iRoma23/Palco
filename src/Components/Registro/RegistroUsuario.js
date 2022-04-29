@@ -76,9 +76,9 @@ const RegistroUsuario = () => {
               </div>
             </div>
             <div className="col-12 text-center">
-              <button type="submit" className="btn btn-primary rounded-pill btn-lg">
+              <Link to="/login" type="submit" className="btn btn-primary rounded-pill btn-lg">
                 Registrar
-              </button>
+              </Link>
             </div>
             <div className="form-text mb-3">
               <Link to="/login">Ya tengo una cuenta</Link>

@@ -7,13 +7,13 @@ import vip from "./img/palco_vip.jpg"
 import gold from "./img/palco_gold.jpg"
 import premium from "./img/palco_premium.jpg"
 import "./main.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import NavbarVisit from '../Navbar/NavbarVisitante/NavbarVisit'
 
 const InfoEvento = () => {
   return (
     <>
-    <NavbarVisit/>
+      {/* <NavbarVisit/> */}
       <div className="m-5">
 
         <div className="contenedor row row-cols-1 row-cols-md-3 g-4 ">
@@ -27,7 +27,7 @@ const InfoEvento = () => {
               </div>
               <div className="card-footer d-flex flex-row justify-content-between">
                 <small className="text-muted">Precio desde: s/ 550.00</small>
-               
+
                 <NavLink to="/todo-eventos" className='btn btn-outline-dark'>Eventos</NavLink>
               </div>
             </div>
@@ -40,7 +40,7 @@ const InfoEvento = () => {
               </div>
               <div className="col-md-3">
                 <div className="ul ">
-                <h5 className="">Palco Premium:</h5>
+                  <h5 className="">Palco Premium:</h5>
                   <li className="">Información Palco</li>
                   <li className="">Información Palco</li>
                   <li className="">Información Palco</li>
@@ -50,7 +50,7 @@ const InfoEvento = () => {
                 <h5 className="border bg-info p-1">S/ 950.00</h5>
               </div>
               <div className=" col text-center">
-              <button className="btn btn-primary btn-lg rounded-pill">Reservar</button>
+                <Link to="/login" className="btn btn-primary btn-lg rounded-pill">Reservar</Link>
               </div>
             </div>
             <div className="row align-items-center border-top mb-3">
@@ -59,7 +59,7 @@ const InfoEvento = () => {
               </div>
               <div className="col-md-3">
                 <div className="ul ">
-                <h5 className="">Palco Gold:</h5>
+                  <h5 className="">Palco Gold:</h5>
                   <li className="">Información Palco</li>
                   <li className="">Información Palco</li>
                   <li className="">Información Palco</li>
@@ -69,7 +69,7 @@ const InfoEvento = () => {
                 <h5 className="border bg-info p-1">S/ 750.00</h5>
               </div>
               <div className=" col text-center">
-              <button className="btn btn-primary btn-lg rounded-pill">Reservar</button>
+                <Link to="/login" className="btn btn-primary btn-lg rounded-pill">Reservar</Link>
               </div>
             </div>
             <div className="row align-items-center border-top">
@@ -88,7 +88,7 @@ const InfoEvento = () => {
                 <h5 className="border bg-info p-1">S/ 550.00</h5>
               </div>
               <div className=" col text-center">
-              <button className="btn btn-primary btn-lg rounded-pill">Reservar</button>
+                <Link to="/login" className="btn btn-primary btn-lg rounded-pill">Reservar</Link>
               </div>
             </div>
           </div>
