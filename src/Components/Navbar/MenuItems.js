@@ -21,4 +21,4 @@ export const MenuItems = [
   // },
 ]
 
-export const MenuButtonItem = 'Salir';
+export const MenuButtonItem = 'Cerrar Sesion';

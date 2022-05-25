@@ -28,6 +28,10 @@
   filter: invert(100%);
 }
 
+.logo-palco{
+  max-width: 190px;
+}
+
 .nav-menu {
   display: grid;
   margin: 0;
@@ -35,7 +39,7 @@
   grid-gap: 8px;
   list-style: none;
   /* text-align: center; */
-  width: 70vw;
+  width: 60vw;
   justify-content: end;
   /* align-items: center; */
   /* margin-right: 2rem; */

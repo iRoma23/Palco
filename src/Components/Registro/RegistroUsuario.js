@@ -1,23 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import NavbarVisit from "../Navbar/NavbarVisitante/NavbarVisit";
+import "./registro.css"
 
 const RegistroUsuario = () => {
   return (
     <>
-      <form className="" action="#">
+      <form className="fondo1" action="#">
         <div className="container">
-          <div className="col-md-6 p-2 border border-secondary border-2 rounded">
-            <div className="text-center">
-              <h3>Registro de usuario</h3>
+          <div className="fondo col-md-5 p-2 rounded">
+            <div className="text-center tittle">
+              <h2 className="fw-bold">Registro de usuario</h2>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-12 mb-2">
               <label for="inputEmail4" className="form-label">
                 Email
               </label>
               <input type="email" className="form-control" id="inputEmail4" />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-12 mb-2">
+              <label for="username" className="form-label">
+                Username
+              </label>
+              <input type="text" className="form-control" id="username" />
+            </div>
+            <div className="col-md-12 mb-2">
               <label for="inputPassword4" className="form-label">
                 Password
               </label>
@@ -27,7 +33,7 @@ const RegistroUsuario = () => {
                 id="inputPassword4"
               />
             </div>
-            <div className="col-12">
+            <div className="col-12 mb-2">
               <label for="inputAddress" className="form-label">
                 Nombres Completos
               </label>
@@ -38,32 +44,19 @@ const RegistroUsuario = () => {
                 placeholder="Ej. Romario Jara"
               />
             </div>
-            <div className="col-md-6">
-              <label for="movil2" className="form-label">
+            <div className="col-md-9 mb-2">
+              <label for="" className="form-label">
                 Telefono Móvil
               </label>
               <input
                 type="number"
                 class="form-control"
-                id="movil2"
+                id=""
                 placeholder=""
               />
             </div>
-            <div className="col-md-4">
-              <label for="inputState" className="form-label">
-                Pais
-              </label>
-              <select id="inputState" className="form-select">
-                <option selected>Perú</option>
-                <option>Argentina</option>
-                <option>Ecuador</option>
-                <option>Uruguay</option>
-                <option>Chile</option>
-                <option>Bolivia</option>
-                <option>Brasil</option>
-              </select>
-            </div>
-            <div className="col-12">
+            
+            <div className="col-12 mb-2">
               <div className="form-check">
                 <input
                   className="form-check-input"
@@ -80,8 +73,8 @@ const RegistroUsuario = () => {
                 Registrar
               </Link>
             </div>
-            <div className="form-text mb-3">
-              <Link to="/login">Ya tengo una cuenta</Link>
+            <div className="color-text">
+              <Link className="text-reset" to="/login">Ya tengo una cuenta</Link>
             </div>
           </div>
         </div>

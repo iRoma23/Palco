@@ -1,57 +1,23 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import NavbarVisit from '../../../Components/Navbar/NavbarVisitante/NavbarVisit'
-import logof from "./img/logo-facebook.png";
-import logog from "./img/logo-google.png";
+import imgregistro from '../../../Assets/images/registropalco.jpg'
+import './style.css'
 
 const RegistroPorpietarioPage = () => {
 
   return (
     <>
-      <form action="#">
-        <div className="container">
-          <div className="col-sm-5 border border-secondary border-2 rounded p-3">
+      <form action="#" className='formulario '>
+        <div className="container ">
+            <div className="col-sm-6">
             <div className="text-center pb-2">
               <h3>Registrar Propietario</h3>
-
             </div>
-            <div className="col justify-content-center">
-              <div className="col text-center">
-                <button
-                  type="submit"
-                  className="btn btn-outline-primary w-100 my-1"
-                >
-                  <div className="row align-items-center">
-                    <div className="col-2 d-md-block">
-                      <img src={logof} width="30" alt="F" />
-                    </div>
-                    <div className="col text-center">Sign in with Facebook</div>
-                  </div>
-                </button>
-              </div>
-              <div className="col text-center">
-                <button
-                  type="submit"
-                  className="btn btn-outline-primary w-100 my-1"
-                >
-                  <div className="row align-items-center">
-                    <div className="col-2 d-md-block">
-                      <img src={logog} width="30" alt="G" />
-                    </div>
-                    <div className="col text-center">Sign in with Google</div>
-                  </div>
-                </button>
-              </div>
-            </div>
-
-
-            <div className="text-center mb-3">or</div>
             <div className="mb-3">
               <div className="mb-3">
                 <input
                   type="email"
                   class="form-control"
-                  id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   placeholder="Correo Electronico"
                 // value = {email}
@@ -62,7 +28,6 @@ const RegistroPorpietarioPage = () => {
                 <input
                   type="text"
                   class="form-control"
-                  id="exampleInputPassword1"
                   placeholder="Nombres"
                 // value = {password} 
 
@@ -73,7 +38,6 @@ const RegistroPorpietarioPage = () => {
                 <input
                   type="text"
                   class="form-control"
-                  id="exampleInputPassword1"
                   placeholder="Apellidos"
                 // value = {password} 
 
@@ -82,9 +46,8 @@ const RegistroPorpietarioPage = () => {
 
               <div class="mb-3">
                 <input
-                  type="number"
+                  type=""
                   class="form-control"
-                  id="exampleInputPassword1"
                   placeholder="Dni"
                 // value = {password} 
 
@@ -105,10 +68,9 @@ const RegistroPorpietarioPage = () => {
 
               <div class="mb-3">
                 <input
-                  type="number"
+                  type="text"
                   class="form-control"
-                  id="exampleInputPassword1"
-                  placeholder="Ciudad"
+                  placeholder="Titulo de Propiedad"
                 // value = {password} 
 
                 />
@@ -120,7 +82,7 @@ const RegistroPorpietarioPage = () => {
                   type="checkbox"
                   id="gridCheck"
                 />
-                <label className="form-check-label" for="gridCheck">
+                <label className="form-check-label color-text bold" for="gridCheck">
                   Acepto los Términos y condiciones
                 </label>
               </div>
@@ -141,6 +103,7 @@ const RegistroPorpietarioPage = () => {
               </div> */}
             </div>
           </div>
+          
         </div>
       </form>
 

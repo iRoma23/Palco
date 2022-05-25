@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logof from "../../Assets/images/logo-facebook.png";
 import logog from "../../Assets/images/logo-google.png";
+import "./signin.css"
 // react-router-dom
 import { Link, useNavigate } from "react-router-dom";
 // redux
@@ -30,44 +31,44 @@ export const SignIn = () => {
   return (
     <>
     
-      <form action="#" onSubmit={(e) => handleSubmit(e)}>
+      <form className="fondo1" action="#" onSubmit={(e) => handleSubmit(e)}>
         <div className="container">
-          <div className="col-sm-5 border border-secondary border-2 rounded p-3">
+          <div className="fondo col-sm-5 rounded p-2">
               <div className="text-center pb-2">
-                <h3>Iniciar Sesión</h3>
+                <h2 className="tittle fw-bold">Iniciar Sesión</h2>
                 
               </div>
               <div className="col justify-content-center">
                 <div className="col text-center">
                   <button
                     type="submit"
-                    className="btn btn-outline-primary w-100 my-1"
+                    className="btn btn-outline-primary w-100 my-1 bgredes "
                   >
                     <div className="row align-items-center">
                       <div className="col-2 d-md-block">
                         <img src={logof} width="30" alt="F" />
                       </div>
-                      <div className="col text-center">Sign in with Facebook</div>
+                      <div className="col text-center"><a className="text-decoration-none" href="https://www.facebook.com/"> Sign in with Facebook</a></div>
                     </div>
                   </button>
                 </div>
                 <div className="col text-center">
                   <button
                     type="submit"
-                    className="btn btn-outline-primary w-100 my-1"
+                    className="btn btn-outline-primary w-100 my-1  bgredes"
                   >
                     <div className="row align-items-center">
                       <div className="col-2 d-md-block">
                         <img src={logog} width="30" alt="G" />
                       </div>
-                      <div className="col text-center">Sign in with Google</div>
+                      <div className="col text-center"><a className="text-decoration-none" href="https://myaccount.google.com/">Sign in with Google</a></div>
                     </div>
                   </button>
                 </div>
               </div>
             
 
-            <div className="text-center mb-3">or</div>
+            <div className="text-center mb-3 fs-5 color-text">or</div>
             <div className="mb-3">
               <div className="mb-3">
                 <input
@@ -75,7 +76,7 @@ export const SignIn = () => {
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp" 
-                  placeholder="Correo Electronico" 
+                  placeholder="Email o Username" 
                   value = {email}
                   onChange = {(e) => setEmail(e.target.value)}
                 />
@@ -90,8 +91,8 @@ export const SignIn = () => {
                   onChange = {(e) => setPassword(e.target.value)}
                 />
               </div>
-              <div id="emailHelp" class="form-text mb-3">
-                <a href="#">¿Olvidaste tu contraseña?</a>
+              <div id="emailHelp" class="color-text form-text mb-3">
+                <a href="#" className="text-reset">¿Olvidaste tu contraseña?</a>
               </div>
               <div className="text-center">
                   <button type="submit" className="btn btn-primary btn-lg">
@@ -99,11 +100,11 @@ export const SignIn = () => {
                   </button>
               </div>
               <div className="row text-center">
-                <div id="emailHelp" className="form-text mb-3 col">
+                <div id="emailHelp" className="color-text form-text mb-3 col">
                   ¿No tienes una cuenta?
                 </div>
-                <div id="emailHelp" className="form-text mb-3 col">
-                  <Link to="/registro-usuario">Registrate aquí</Link>
+                <div id="emailHelp" className="color-text form-text mb-3 col">
+                  <Link className="text-reset" to="/registro-usuario">Registrate aquí</Link>
                 </div>
               </div>
             </div>
