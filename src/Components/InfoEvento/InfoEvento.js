@@ -50,7 +50,7 @@ const InfoEvento = () => {
                 <h5 className="border bg-info p-1">S/ 950.00</h5>
               </div>
               <div className=" col text-center">
-                <Link to="/login" className="btn btn-primary btn-lg rounded-pill">Reservar</Link>
+                <Link to="/reserva-exito" className="btn btn-primary btn-lg rounded-pill">Reservar</Link>
               </div>
             </div>
             <div className="row align-items-center border-top mb-3">
@@ -69,7 +69,7 @@ const InfoEvento = () => {
                 <h5 className="border bg-info p-1">S/ 750.00</h5>
               </div>
               <div className=" col text-center">
-                <Link to="/login" className="btn btn-primary btn-lg rounded-pill">Reservar</Link>
+                <Link to="/reserva-exito" className="btn btn-primary btn-lg rounded-pill">Reservar</Link>
               </div>
             </div>
             <div className="row align-items-center border-top">
@@ -88,7 +88,7 @@ const InfoEvento = () => {
                 <h5 className="border bg-info p-1">S/ 550.00</h5>
               </div>
               <div className=" col text-center">
-                <Link to="/login" className="btn btn-primary btn-lg rounded-pill">Reservar</Link>
+                <Link to="/reserva-exito" className="btn btn-primary btn-lg rounded-pill">Reservar</Link>
               </div>
             </div>
           </div>

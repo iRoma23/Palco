@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import NavbarVisit from '../../../Components/Navbar/NavbarVisitante/NavbarVisit'
 import palco from './img/palco.jpg'
 
 const RegistroPalcoPage = () => {
@@ -9,7 +8,7 @@ const RegistroPalcoPage = () => {
       {/* <NavbarVisit /> */}
       <div className="card-body">
         <h3 className="text-muted p-1 text-center">
-          RENTA TU PALCO PARA LOS MEJORES PARTIDOS DE LA LIGA I - 2022
+          INGRESA LOS DATOS Y UBICACIÓN DE TU PALCO
         </h3>
       </div>
       <div className="card">
@@ -95,7 +94,7 @@ const RegistroPalcoPage = () => {
                     id="flexCheckChecked"
                   />
                   <label class="form-check-label" for="flexCheckChecked">
-                    Zona Norte
+                    Zona Sur
                   </label>
                 </div>
                 {/* Aca va el Boton */}
@@ -103,7 +102,7 @@ const RegistroPalcoPage = () => {
                   <Link type="button" class="btn btn-primary" to="/registro_propietario">
                     Atras
                   </Link>
-                  <Link type="button" class="btn btn-primary " to="/todo-eventos">
+                  <Link type="button" class="btn btn-primary " to="/registro_exitoso">
                     Registrar
                   </Link>
 

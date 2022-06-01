@@ -6,10 +6,10 @@ import Footer from "./Components/Footer/Footer";
 import InfoEvento from "./Components/InfoEvento/InfoEvento";
 import MisReservas from "./Components/MisReservas/MisReservas";
 import ModalResarva from "./Components/Modal/ModalResarva";
-
+import RegistroExitoso from "./Pages/Propietario/RegistroPalco/RegistroExitoPage";
 import RegistroUsuario from "./Components/Registro/RegistroUsuario";
-import PageInfoEvento from "./Pages/Cliente/Info_Evento/PageInfoEvento";
 import NotFoundPages from "./Pages/not_found_404/NotFoundPages";
+import ReservaExito from "./Pages/Cliente/AlquilerPalco/ReservaExitoPage";
 
 
 import Publicado from "./Pages/Propietario/Publicados/Publicado/Publicado";
@@ -67,7 +67,8 @@ function AppPrueba() {
           <Route path="/registro-usuario" element={< RegistroUsuario/>} />
           <Route path="/modal" element={< ModalResarva/>} />
           <Route path="/mis-reservas" element={< MisReservas/>} />
-
+          <Route path="/registro_exitoso" element={< RegistroExitoso/>} />
+          <Route path="/reserva-exito" element={< ReservaExito/>} />
         {/* </Route> */}
 
 

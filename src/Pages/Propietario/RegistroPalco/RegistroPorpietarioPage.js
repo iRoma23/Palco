@@ -53,19 +53,6 @@ const RegistroPorpietarioPage = () => {
 
                 />
               </div>
-
-              <div class="mb-3">
-                <select id="inputState" className="form-select">
-                  <option selected>Pais</option>
-                  <option>Peru</option>
-                  <option>Ecuador</option>
-                  <option>Uruguay</option>
-                  <option>Chile</option>
-                  <option>Bolivia</option>
-                  <option>Brasil</option>
-                </select>
-              </div>
-
               <div class="mb-3">
                 <input
                   type="text"

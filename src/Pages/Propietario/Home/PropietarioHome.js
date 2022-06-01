@@ -15,7 +15,7 @@ const PropietarioHome = () => {
   return (
     <>
       <div >
-        <p3 className="bold">Bienvenido Roberto!</p3>
+        <p3 className="bold">Bienvenido .........!</p3>
         <NukaCar />
         <TodoEventos />
       

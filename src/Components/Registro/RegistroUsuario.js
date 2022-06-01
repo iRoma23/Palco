@@ -69,7 +69,7 @@ const RegistroUsuario = () => {
               </div>
             </div>
             <div className="col-12 text-center">
-              <Link to="/login" type="submit" className="btn btn-primary rounded-pill btn-lg">
+              <Link to="/login" type="submit" className="btn btn-primary btn-lg">
                 Registrar
               </Link>
             </div>
