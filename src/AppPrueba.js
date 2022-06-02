@@ -16,7 +16,7 @@ import Publicado from "./Pages/Propietario/Publicados/Publicado/Publicado";
 import Publicados from "./Pages/Propietario/Publicados/Publicados";
 import RegistroFotoPage from "./Pages/Propietario/RegistroPalco/RegistroFotoPage";
 import RegistroPalcoPage from "./Pages/Propietario/RegistroPalco/RegistroPalcoPage";
-import RegistroPorpietarioPage from "./Pages/Propietario/RegistroPalco/RegistroPorpietarioPage";
+import RegistroPropietarioPage from "./Pages/Propietario/RegistroPalco/RegistroPropietarioPage";
 import SingInPage from "./Pages/Propietario/Sign_in/SingInPage";
 
 // Visitante Page
@@ -76,7 +76,7 @@ function AppPrueba() {
 
         <Route path="/publicados" element={<Publicados />} />
         <Route path="/publicado" element={<Publicado />} />
-        <Route path="/registro_propietario" element={<RegistroPorpietarioPage />} />
+        <Route path="/registro_propietario" element={<RegistroPropietarioPage />} />
         <Route path="/registro_palco" element={<RegistroPalcoPage />} />
         <Route path="/registro_foto" element={<RegistroFotoPage />} />
 
@@ -85,7 +85,7 @@ function AppPrueba() {
           <Route path="/home-propietario" element={<PropietarioHome />} />
           <Route path="/publicados" element={<Publicados />} />
           <Route path="/publicado" element={<Publicado />} />
-          <Route path="/registro_propietario" element={<RegistroPorpietarioPage />} />
+          <Route path="/registro_propietario" element={<RegistroPropietarioPage />} />
           <Route path="/registro_palco" element={<RegistroPalcoPage />} />
           <Route path="/registro_foto" element={<RegistroFotoPage />} />
         {/* </Route> */}

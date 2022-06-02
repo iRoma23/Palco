@@ -50,6 +50,12 @@ const RegistroPalcoPage = () => {
                   id="exampleFormControlInput1"
                   placeholder="Numero de Palco"
                 />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Detalle"
+                />
               </div>
               {/* Aca va los checkbox */}
               <div className="card-body">
