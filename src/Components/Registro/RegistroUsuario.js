@@ -1,17 +1,28 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import axios from "axios";
+import Notification from "../Notification/Notification";
 
 const RegistroUsuario = () => {
   const [newUsername, setNewUsername] = useState('')
   const [newPassword, setNewPassword] = useState('') 
   const [newName, setNewName] = useState('') 
   const [newEmail, setNewEmail] = useState('')
-  
-  const navigate = useNavigate()  
+  const [message, setMessage] = useState({msg: null, success: null})
 
-  const baseUrl = 'https://palco-app.herokuapp.com/api/user'
+  const notifier = (msg, success) => {
+    const msgObject = {
+      msg: msg,
+      success: success
+    }
+    setMessage(msgObject)
+    setTimeout(() => {
+      setMessage({msg: null, success: null})
+    }, 5000)
+  }
+
+  const baseUrl = 'https://codigo-palco.herokuapp.com/api/user'
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -23,14 +34,16 @@ const RegistroUsuario = () => {
       email: newEmail
     }
     axios.post(baseUrl, userObject)
-      .then(response => console.log(response.data))
+      .then(response => 
+        {
+          console.log(response.data)
+          notifier('Se registro exitosamente, ingrese sus credenciales en Login', true)
+        })
 
     setNewUsername('')
     setNewPassword('')
     setNewEmail('')
     setNewName('')
-
-    navigate('/home')    
   }
 
   const handleUsernameChange = e => setNewUsername(e.target.value)
@@ -40,6 +53,7 @@ const RegistroUsuario = () => {
 
   return (
     <>
+      <Notification message={message} />
       <form className="fondo1" action="#" onSubmit={handleSubmit}>
         <div className="container">
           <div className="col-md-6 p-2 border border-secondary border-2 rounded">

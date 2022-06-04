@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const CardEvento = ({ handleClick, titulo, fecha, img }) => {
+const CardEvento = ({ titulo, fecha, img, id }) => {
   return (
     <div className="col-12 col-md-4 ">
       <div className="contenedor shadow">
@@ -10,7 +11,7 @@ const CardEvento = ({ handleClick, titulo, fecha, img }) => {
           <p className="card-text">Fecha: {fecha}</p>
         </div>
         <div className="card-footer d-flex flex-row justify-content-center">
-          <button className='btn btn-outline-dark' onClick={handleClick}>Ver Palco</button>
+          <Link to={`/info-evento/${id}`} className='btn btn-outline-dark'>Ver Palco</Link>
         </div>
       </div>
     </div>

@@ -197,18 +197,6 @@ const RegistroPalcoPage = () => {
           </div>
         </div>
       </form>
-       <div className="text-center">
-        <h2>LISTA DE PALCOS:</h2>
-        <ul>
-          {PrivateBoxList.map((box) => {
-            return (
-              <li>
-                {box._id}, {box.zone}, {box.detail}
-              </li>
-            );
-          })}
-        </ul>
-      </div>
     </>
   );
 };

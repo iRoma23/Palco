@@ -9,23 +9,58 @@ import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { filterRole } from "../../reducers/roleReducer";
 
+import axios from "axios";
+
+import Notification from "../Notification/Notification";
+
 export const SignIn = () => {
   // Hooks
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [message, setMessage] = useState({msg: null, success: null})
 
   const dispatch = useDispatch();
-  let navigate = useNavigate(); 
+  const navigate = useNavigate(); 
+
+  const baseUrl2 = 'https://codigo-palco.herokuapp.com/api/auth/login'
+
+  const notifier = (msg, success) => {
+    const msgObject = {
+      msg: msg,
+      success: success
+    }
+    setMessage(msgObject)
+    setTimeout(() => {
+      setMessage({msg: null, success: null})
+    }, 5000)
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(filterRole('CLIENTE'))
-    navigate('/home')
+    console.log(username, password)
+    const userObject = {
+      username: username,
+      password: password
+    }
+    axios.post(baseUrl2, userObject)
+      .then(response => {
+        console.log(response.data)
+        dispatch(filterRole('CLIENTE'))
+        navigate('/home')
+      })
+      .catch(() =>{
+        notifier('Credenciales incorrectas', false)
+        setUsername('')
+        setPassword('')
+      })
   }
+
+  const handleUsernameChange = e => setUsername(e.target.value)
+  const handlePasswordChange = e => setPassword(e.target.value)
 
   return (
     <>
-    
+      <Notification message={message} />
       <form className="fondo1" action="#" onSubmit={(e) => handleSubmit(e)}>
         <div className="container">
           <div className="col-sm-5 border border-secondary border-2 rounded p-3">
@@ -72,8 +107,8 @@ export const SignIn = () => {
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp" 
                   placeholder="Usuario" 
-                  value = {email}
-                  onChange = {(e) => setEmail(e.target.value)}
+                  value = {username}
+                  onChange = {handleUsernameChange}
                 />
               </div>
               <div class="">
@@ -83,7 +118,7 @@ export const SignIn = () => {
                   id="exampleInputPassword1"
                   placeholder="Contraseña" 
                   value = {password} 
-                  onChange = {(e) => setPassword(e.target.value)}
+                  onChange = {handlePasswordChange}
                 />
               </div>
               <div id="emailHelp" class="form-text mb-3">

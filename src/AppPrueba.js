@@ -67,9 +67,7 @@ function AppPrueba() {
           // Exito
           <Route path="/registro-exitoso"  element={<RegistroExitoPage />}/>
 
-
-
-          <Route path="/info-evento" element={<InfoEvento />} />
+          <Route path="/info-evento/:id" element={<InfoEvento />} />
           
           
           <Route path="/modal" element={< ModalResarva/>} />
