@@ -4,7 +4,7 @@ import './Navbar.css'
 import menuIcon from './icons/menu.svg'
 import closeIcon from './icons/close.svg'
 import Button from './Button'
-import logoNav from '../../Assets/images/logo2.PNG'
+import logo2 from '../../Assets/images/logo2.PNG'
 
 // react-router-dom
 import { Link, useNavigate } from 'react-router-dom'
@@ -33,7 +33,7 @@ const Navbar = () => {
       <nav className='NavbarItems'>
         
         <Link className='decoration-none' to='/home'>
-          <h1 className='navbar-title'>Tu Palco</h1>
+          <img src={logo2} className="logo-palco"/>
         </Link>
        
         <div className='menu-icon' onClick={handleClick}>

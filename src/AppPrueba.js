@@ -29,8 +29,8 @@ import PropietarioHome from "./Pages/Propietario/Home/PropietarioHome";
 import Publicados from "./Pages/Propietario/Publicados/Publicados";
 import Publicado from "./Pages/Propietario/Publicados/Publicado/Publicado";
 
-// Cliente Page
-import ClienteHome from './Pages/Cliente/Home/ClienteHome'
+// Exito
+import RegistroExitoPage from './Pages/Propietario/RegistroPalco/RegistroExitoPage'
 
 // redux
 import { useSelector } from "react-redux";
@@ -63,6 +63,9 @@ function AppPrueba() {
           <Route path="/home" element={<PropietarioHome />} />
           <Route path="/publicados" element={<Publicados />} />
           <Route path="/publicado" element={<Publicado />} />
+
+          // Exito
+          <Route path="/registro-exitoso"  element={<RegistroExitoPage />}/>
 
 
 

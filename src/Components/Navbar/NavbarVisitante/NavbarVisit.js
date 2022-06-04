@@ -4,6 +4,7 @@ import '../Navbar.css'
 import menuIcon from '../icons/menu.svg'
 import closeIcon from '../icons/close.svg'
 import ButtonVisit from './ButtonVisit'
+import logo2 from '../../../Assets/images/logo2.PNG'
 // react-router-dom
 import { Link } from 'react-router-dom'
 
@@ -17,8 +18,8 @@ const NavbarVisit = () => {
   return (
     <header>
       <nav className='NavbarItems'>
-        <Link className='decoration-none' to='/'><h1 className='navbar-title'>
-          Tu Palco</h1>
+        <Link className='decoration-none' to='/'>
+          <img src={logo2} className="logo-palco"/>
         </Link>
         
         <div className='menu-icon' onClick={handleClick}>

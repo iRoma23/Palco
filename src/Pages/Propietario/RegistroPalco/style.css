@@ -1,0 +1,12 @@
+.formulario{
+    background-image: url(../../../Assets/images/registropalco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tittle{
+    color: #bbe1fa
+}
+.color-text{
+    color: #000;
+    font-weight: 600;
+}

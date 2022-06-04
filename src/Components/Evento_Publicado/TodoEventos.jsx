@@ -27,8 +27,7 @@ const TodoEventos = () => {
                 <h5 className="card-title">Copa America Brasil</h5>
                 <p className="card-text">Fecha: 19 de marzo 2022</p>
               </div>
-              <div className="card-footer d-flex flex-row justify-content-between">
-                <small className="text-muted">Precio: s/ 50.00</small>
+              <div className="card-footer d-flex flex-row justify-content-center">
                 <NavLink to="/login" className='btn btn-outline-dark'>Ver Palco</NavLink>
               </div>
 
@@ -42,8 +41,7 @@ const TodoEventos = () => {
                 <h5 className="card-title">Cristal vs Alianza Sullana</h5>
                 <p className="card-text">Fecha: 19 de marzo 2022</p>
               </div>
-              <div className="card-footer d-flex flex-row justify-content-between">
-                <small className="text-muted">Precio: s/ 50.00</small>
+              <div className="card-footer d-flex flex-row justify-content-center">
                 <NavLink to="/login" className='btn btn-outline-dark'>Ver Palco</NavLink>
               </div>
             </div>
@@ -55,8 +53,7 @@ const TodoEventos = () => {
                 <h5 className="card-title">Universitario vs Melgar</h5>
                 <p className="card-text">Fecha: 19 de marzo 2022</p>
               </div>
-              <div className="card-footer d-flex flex-row justify-content-between">
-                <small className="text-muted">Precio: s/ 50.00</small>
+              <div className="card-footer d-flex flex-row justify-content-center">
                 <NavLink to="/login" className='btn btn-outline-dark'>Ver Palco</NavLink>
               </div>
             </div>
@@ -71,8 +68,7 @@ const TodoEventos = () => {
                 <h5 className="card-title">Cienciano vs Sport Boys</h5>
                 <p className="card-text">Fecha: 19 de marzo 2022 </p>
               </div>
-              <div className="card-footer d-flex flex-row justify-content-between">
-                <small className="text-muted">Precio: s/ 50.00</small>
+              <div className="card-footer d-flex flex-row justify-content-center">
                 <NavLink to="/login" className='btn btn-outline-dark'>Ver Palco</NavLink>
               </div>
             </div>
@@ -84,8 +80,7 @@ const TodoEventos = () => {
                 <h5 className="card-title">Cantolao vs Ayacucho FC</h5>
                 <p className="card-text">Fecha: 19 de marzo 2022</p>
               </div>
-              <div className="card-footer d-flex flex-row justify-content-between">
-                <small className="text-muted">Precio: s/ 50.00</small>
+              <div className="card-footer d-flex flex-row justify-content-center">
                 <NavLink to="/login" className='btn btn-outline-dark'>Ver Palco</NavLink>
               </div>
             </div>
@@ -97,8 +92,7 @@ const TodoEventos = () => {
                 <h5 className="card-title">Cantolao vs Binacional</h5>
                 <p className="card-text">Fecha: 19 de marzo 2022</p>
               </div>
-              <div className="card-footer d-flex flex-row justify-content-between">
-                <small className="text-muted">Precio: s/ 50.00</small>
+              <div className="card-footer d-flex flex-row justify-content-center">
                 <NavLink to="/login" className='btn btn-outline-dark'>Ver Palco</NavLink>
               </div>
             </div>

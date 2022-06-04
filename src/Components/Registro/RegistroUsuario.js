@@ -5,7 +5,7 @@ import NavbarVisit from "../Navbar/NavbarVisitante/NavbarVisit";
 const RegistroUsuario = () => {
   return (
     <>
-      <form className="" action="#">
+      <form className="fondo1" action="#">
         <div className="container">
           <div className="col-md-6 p-2 border border-secondary border-2 rounded">
             <div className="text-center">

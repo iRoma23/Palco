@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logof from "../../Assets/images/logo-facebook.png";
 import logog from "../../Assets/images/logo-google.png";
+import "./signin.css"
 // react-router-dom
 import { Link, useNavigate } from "react-router-dom";
 // redux
@@ -25,7 +26,7 @@ export const SignIn = () => {
   return (
     <>
     
-      <form action="#" onSubmit={(e) => handleSubmit(e)}>
+      <form className="fondo1" action="#" onSubmit={(e) => handleSubmit(e)}>
         <div className="container">
           <div className="col-sm-5 border border-secondary border-2 rounded p-3">
               <div className="text-center pb-2">
