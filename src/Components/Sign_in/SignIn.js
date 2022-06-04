@@ -67,11 +67,11 @@ export const SignIn = () => {
             <div className="mb-3">
               <div className="mb-3">
                 <input
-                  type="email"
+                  type="text"
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp" 
-                  placeholder="Correo Electronico" 
+                  placeholder="Usuario" 
                   value = {email}
                   onChange = {(e) => setEmail(e.target.value)}
                 />

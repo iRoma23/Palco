@@ -11,7 +11,7 @@ import img5 from "./img/grupo5.jpg";
 
 const NukaCar = () => {
   return (
-    <div classname='container-fluid p-2'>
+    <div classname='container-fluid m-2'>
       <Nuka className='contenedor card'>
         <img src={img1} alt='evento' />
         <img src={img2} alt='evento' />

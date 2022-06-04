@@ -1,23 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import img1 from "./img/1.jpg";
-import img2 from "./img/2.jpg";
-import img3 from "./img/3.jpg";
-import img4 from "./img/4.jpg";
 import vip from "./img/palco_vip.jpg"
 import gold from "./img/palco_gold.jpg"
 import premium from "./img/palco_premium.jpg"
 import "./main.css";
-import { NavLink, Link } from "react-router-dom";
-import NavbarVisit from '../Navbar/NavbarVisitante/NavbarVisit'
+import { useNavigate } from "react-router-dom";
+import Notification from "../Notification/Notification";
 
 const InfoEvento = () => {
+  const [message, setMessage] = useState({msg: null, success: null})
+
+  const navigate = useNavigate()
+
+  const notifier = (msg, success) => {
+    const msgObject = {
+      msg: msg,
+      success: success
+    }
+    setMessage(msgObject)
+    setTimeout(() => {
+      setMessage({msg: null, success: null})
+      navigate('/home')
+    }, 2000)
+  }
+
+  const addReserva = () => {
+    notifier(`Se reservo el evento`, true)
+  }
+
   return (
     <>
+      <Notification message={message} />
       <div className="m-5">
 
         <div className="contenedor row row-cols-1 row-cols-md-3 g-4 ">
+
           <div className="col-md-3">
-            <h3>Información del Evento:</h3>
+            <h3>Evento:</h3>
             <div className="contenedor shadow">
               <img src={img1} className="card-img-top" alt="..." />
               <div className="card-body">
@@ -26,6 +45,7 @@ const InfoEvento = () => {
               </div>
             </div>
           </div>
+
           <div className="col-md-9">
             <h3>Palcos disponibles:</h3>
             <div className="row align-items-center border-top mb-3">
@@ -44,7 +64,12 @@ const InfoEvento = () => {
                 <h5 className="border bg-info p-1">S/ 950.00</h5>
               </div>
               <div className=" col text-center">
-                <Link to="/login" className="btn btn-primary btn-lg rounded-pill">Reservar</Link>
+                <button 
+                  className="btn btn-primary btn-lg rounded-pill"
+                  onClick={addReserva}
+                >
+                  Reservar
+                </button>
               </div>
             </div>
             <div className="row align-items-center border-top mb-3">
@@ -63,7 +88,7 @@ const InfoEvento = () => {
                 <h5 className="border bg-info p-1">S/ 750.00</h5>
               </div>
               <div className=" col text-center">
-                <Link to="/login" className="btn btn-primary btn-lg rounded-pill">Reservar</Link>
+                <button className="btn btn-primary btn-lg rounded-pill">Reservar</button>
               </div>
             </div>
             <div className="row align-items-center border-top">
@@ -82,7 +107,7 @@ const InfoEvento = () => {
                 <h5 className="border bg-info p-1">S/ 550.00</h5>
               </div>
               <div className=" col text-center">
-                <Link to="/login" className="btn btn-primary btn-lg rounded-pill">Reservar</Link>
+                <button className="btn btn-primary btn-lg rounded-pill">Reservar</button>
               </div>
             </div>
           </div>
