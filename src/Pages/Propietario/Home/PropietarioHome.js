@@ -11,6 +11,7 @@ import img4 from "./img/4.jpg";
 import './main.css'
 import Navbar from '../../../Components/Navbar/Navbar';
 import NukaCar from '../../../Components/NukaCar/NukaCar';
+import TodoEventos from '../../../Components/Evento_Publicado/TodoEventos';
 
 const PropietarioHome = () => {
   const navigate = useNavigate()
@@ -111,7 +112,7 @@ const PropietarioHome = () => {
           </div>
         </div>
 
-      </div>
+      </div> */}
 
 
 

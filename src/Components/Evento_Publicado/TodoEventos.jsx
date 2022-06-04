@@ -1,10 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import NavbarVisit from '../Navbar/NavbarVisitante/NavbarVisit';
-import img1 from "./img/1.jpg";
+import brasil from "./img/brasil.jpg";
 import img2 from "./img/2.jpg";
 import img3 from "./img/3.jpg";
 import img4 from "./img/4.jpg";
+import ban1 from "./img/ban1.webp";
+import banner from "./img/banner.webp";
 
 import './main.css'
 
@@ -18,11 +20,11 @@ const TodoEventos = () => {
 
           <div className="col ">
             <div className="contenedor shadow">
-              <img src={img1} className="card-img-top" alt="..." />
+              <img src={brasil} className="card-img-top" alt="..." />
 
 
               <div className="card-body">
-                <h5 className="card-title">Alianza vs San Martin</h5>
+                <h5 className="card-title">Copa America Brasil</h5>
                 <p className="card-text">Fecha: 19 de marzo 2022</p>
               </div>
               <div className="card-footer d-flex flex-row justify-content-between">
@@ -77,7 +79,7 @@ const TodoEventos = () => {
           </div>
           <div className="col  ">
             <div className="contenedor  shadow">
-              <img src={img3} className="card-img-top" alt="..." />
+              <img src={ban1} className="card-img-top" alt="..." />
               <div className="card-body">
                 <h5 className="card-title">Cantolao vs Ayacucho FC</h5>
                 <p className="card-text">Fecha: 19 de marzo 2022</p>
@@ -90,7 +92,7 @@ const TodoEventos = () => {
           </div>
           <div className="col ">
             <div className="contenedor shadow">
-              <img src={img2} className="card-img-top" alt="..." />
+              <img src={banner} className="card-img-top" alt="..." />
               <div className="card-body">
                 <h5 className="card-title">Cantolao vs Binacional</h5>
                 <p className="card-text">Fecha: 19 de marzo 2022</p>

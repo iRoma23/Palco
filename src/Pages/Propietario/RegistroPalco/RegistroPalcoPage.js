@@ -103,7 +103,7 @@ const RegistroPalcoPage = () => {
                   <Link type="button" class="btn btn-primary" to="/registro_propietario">
                     Atras
                   </Link>
-                  <Link type="button" class="btn btn-primary " to="/login">
+                  <Link type="button" class="btn btn-primary " to="/todo-eventos">
                     Registrar
                   </Link>
 
