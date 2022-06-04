@@ -112,7 +112,7 @@ const PropietarioHome = () => {
           </div>
         </div>
 
-      </div> */}
+      </div> 
 
 
 

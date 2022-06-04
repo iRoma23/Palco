@@ -24,11 +24,6 @@ const InfoEvento = () => {
                 <h5 className="card-title">Alianza vs San Martin</h5>
                 <p className="card-text">Fecha: 19 de marzo 2022</p>
               </div>
-              <div className="card-footer d-flex flex-row justify-content-between">
-                <small className="text-muted">Precio desde: s/ 550.00</small>
-
-                <NavLink to="/todo-eventos" className='btn btn-outline-dark'>Eventos</NavLink>
-              </div>
             </div>
           </div>
           <div className="col-md-9">
