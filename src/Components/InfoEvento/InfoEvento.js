@@ -13,7 +13,6 @@ import NavbarVisit from '../Navbar/NavbarVisitante/NavbarVisit'
 const InfoEvento = () => {
   return (
     <>
-    <NavbarVisit/>
       <div className="m-5">
 
         <div className="contenedor row row-cols-1 row-cols-md-3 g-4 ">

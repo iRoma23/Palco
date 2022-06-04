@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 
 import Nuka from "nuka-carousel";
 import img1 from "./img/1.jpg";
@@ -11,17 +13,20 @@ import Navbar from '../../../Components/Navbar/Navbar';
 import NukaCar from '../../../Components/NukaCar/NukaCar';
 
 const PropietarioHome = () => {
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    navigate('/info-evento')
+  }
 
   return (
     <>
       <div >
-
         <NukaCar />
-
       </div>
 
       <div className='m-5 '>
-        <h1 className=''>Mas Eventos </h1>
+        <h1 className=''>Eventos </h1>
 
         <div className="contenedor row row-cols-1 row-cols-md-3 g-4 m-1">
 
@@ -34,9 +39,8 @@ const PropietarioHome = () => {
                 <h5 className="card-title">Alianza vs San Martin</h5>
                 <p className="card-text">Fecha: 19 de marzo 2022</p>
               </div>
-              <div className="card-footer d-flex flex-row justify-content-between">
-                <small className="text-muted">Precio: s/ 50.00</small>
-                <button className='btn btn-outline-dark'>Ver Palco</button>
+              <div className="card-footer d-flex flex-row justify-content-center">
+                <button className='btn btn-outline-dark' onClick={handleClick}>Ver Palco</button>
               </div>
 
 
@@ -49,9 +53,8 @@ const PropietarioHome = () => {
                 <h5 className="card-title">Cristal vs Alianza Sullana</h5>
                 <p className="card-text">Fecha: 19 de marzo 2022</p>
               </div>
-              <div className="card-footer d-flex flex-row justify-content-between">
-                <small className="text-muted">Precio: s/ 50.00</small>
-                <button className='btn btn-outline-dark'>Ver Palco</button>
+              <div className="card-footer d-flex flex-row justify-content-center">
+                <button className='btn btn-outline-dark' onClick={handleClick}>Ver Palco</button>
               </div>
             </div>
           </div>
@@ -62,9 +65,8 @@ const PropietarioHome = () => {
                 <h5 className="card-title">Universitario vs Melgar</h5>
                 <p className="card-text">Fecha: 19 de marzo 2022</p>
               </div>
-              <div className="card-footer d-flex flex-row justify-content-between">
-                <small className="text-muted">Precio: s/ 50.00</small>
-                <button className='btn btn-outline-dark'>Ver Palco</button>
+              <div className="card-footer d-flex flex-row justify-content-center">
+                <button className='btn btn-outline-dark' onClick={handleClick}>Ver Palco</button>
               </div>
             </div>
           </div>
@@ -78,9 +80,8 @@ const PropietarioHome = () => {
                 <h5 className="card-title">Cienciano vs Sport Boys</h5>
                 <p className="card-text">Fecha: 19 de marzo 2022 </p>
               </div>
-              <div className="card-footer d-flex flex-row justify-content-between">
-                <small className="text-muted">Precio: s/ 50.00</small>
-                <button className='btn btn-outline-dark'>Ver Palco</button>
+              <div className="card-footer d-flex flex-row justify-content-center">
+                <button className='btn btn-outline-dark' onClick={handleClick}>Ver Palco</button>
               </div>
             </div>
           </div>
@@ -91,9 +92,8 @@ const PropietarioHome = () => {
                 <h5 className="card-title">Cantolao vs Ayacucho FC</h5>
                 <p className="card-text">Fecha: 19 de marzo 2022</p>
               </div>
-              <div className="card-footer d-flex flex-row justify-content-between">
-                <small className="text-muted">Precio: s/ 50.00</small>
-                <button className='btn btn-outline-dark'>Ver Palco</button>
+              <div className="card-footer d-flex flex-row justify-content-center">
+                <button className='btn btn-outline-dark' onClick={handleClick}>Ver Palco</button>
               </div>
             </div>
           </div>
@@ -104,9 +104,8 @@ const PropietarioHome = () => {
                 <h5 className="card-title">Cantolao vs Binacional</h5>
                 <p className="card-text">Fecha: 19 de marzo 2022</p>
               </div>
-              <div className="card-footer d-flex flex-row justify-content-between">
-                <small className="text-muted">Precio: s/ 50.00</small>
-                <button className='btn btn-outline-dark'>Ver Palco</button>
+              <div className="card-footer d-flex flex-row justify-content-center">
+                <button className='btn btn-outline-dark' onClick={handleClick}>Ver Palco</button>
               </div>
             </div>
           </div>

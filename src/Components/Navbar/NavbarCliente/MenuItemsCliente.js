@@ -14,11 +14,11 @@ export const MenuItemsCliente = [
     url: '/reserva_cliente',
     cName: 'nav-links'
   },
-  {
-    title: 'Logout',
-    url: '/',
-    cName: 'nav-links-mobile'
-  },
+  // {
+  //   title: 'Logout',
+  //   url: '/',
+  //   cName: 'nav-links-mobile'
+  // },
 ]
 
-export const MenuButtonItem = 'Logout';
+export const MenuButtonItem = 'Propietario';

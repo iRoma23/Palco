@@ -6,7 +6,7 @@ import logog from "../../Assets/images/logo-google.png";
 import { Link, useNavigate } from "react-router-dom";
 // redux
 import { useDispatch } from "react-redux";
-import { loginCliente } from "../../features/userSlice";
+import { filterRole } from "../../reducers/roleReducer";
 
 export const SignIn = () => {
   // Hooks
@@ -14,17 +14,12 @@ export const SignIn = () => {
   const [password, setPassword] = useState('');
 
   const dispatch = useDispatch();
-
   let navigate = useNavigate(); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(loginCliente({
-      email: email,
-      password: password,
-      loggedIn: 'cliente'
-    }));
-    navigate('/home-propietario')
+    dispatch(filterRole('CLIENTE'))
+    navigate('/home')
   }
 
   return (

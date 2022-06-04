@@ -11,11 +11,8 @@ import './main.css'
 const TodoEventos = () => {
   return (
       <>
-      {/* <div>
-          <NavbarVisit/>
-      </div> */}
       <div className='m-5 '>
-        <h1 className=''>Mas Eventos </h1>
+        <h1 className=''>Eventos </h1>
 
         <div className="contenedor row row-cols-1 row-cols-md-3 g-4 m-1">
 
@@ -30,7 +27,7 @@ const TodoEventos = () => {
               </div>
               <div className="card-footer d-flex flex-row justify-content-between">
                 <small className="text-muted">Precio: s/ 50.00</small>
-                <NavLink to="/info-evento" className='btn btn-outline-dark'>Ver Palco</NavLink>
+                <NavLink to="/login" className='btn btn-outline-dark'>Ver Palco</NavLink>
               </div>
 
 
@@ -45,7 +42,7 @@ const TodoEventos = () => {
               </div>
               <div className="card-footer d-flex flex-row justify-content-between">
                 <small className="text-muted">Precio: s/ 50.00</small>
-                <NavLink to="/info-evento" className='btn btn-outline-dark'>Ver Palco</NavLink>
+                <NavLink to="/login" className='btn btn-outline-dark'>Ver Palco</NavLink>
               </div>
             </div>
           </div>
@@ -58,7 +55,7 @@ const TodoEventos = () => {
               </div>
               <div className="card-footer d-flex flex-row justify-content-between">
                 <small className="text-muted">Precio: s/ 50.00</small>
-                <NavLink to="/info-evento" className='btn btn-outline-dark'>Ver Palco</NavLink>
+                <NavLink to="/login" className='btn btn-outline-dark'>Ver Palco</NavLink>
               </div>
             </div>
           </div>
@@ -74,7 +71,7 @@ const TodoEventos = () => {
               </div>
               <div className="card-footer d-flex flex-row justify-content-between">
                 <small className="text-muted">Precio: s/ 50.00</small>
-                <NavLink to="/info-evento" className='btn btn-outline-dark'>Ver Palco</NavLink>
+                <NavLink to="/login" className='btn btn-outline-dark'>Ver Palco</NavLink>
               </div>
             </div>
           </div>
@@ -87,7 +84,7 @@ const TodoEventos = () => {
               </div>
               <div className="card-footer d-flex flex-row justify-content-between">
                 <small className="text-muted">Precio: s/ 50.00</small>
-                <NavLink to="/info-evento" className='btn btn-outline-dark'>Ver Palco</NavLink>
+                <NavLink to="/login" className='btn btn-outline-dark'>Ver Palco</NavLink>
               </div>
             </div>
           </div>
@@ -100,7 +97,7 @@ const TodoEventos = () => {
               </div>
               <div className="card-footer d-flex flex-row justify-content-between">
                 <small className="text-muted">Precio: s/ 50.00</small>
-                <NavLink to="/info-evento" className='btn btn-outline-dark'>Ver Palco</NavLink>
+                <NavLink to="/login" className='btn btn-outline-dark'>Ver Palco</NavLink>
               </div>
             </div>
           </div>

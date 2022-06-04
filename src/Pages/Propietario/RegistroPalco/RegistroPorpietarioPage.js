@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import NavbarVisit from '../../../Components/Navbar/NavbarVisitante/NavbarVisit'
 import img1 from './img/palco1.jpg'
 
@@ -7,8 +7,7 @@ const RegistroPorpietarioPage = () => {
 
   return (
     <>
-      {/* <NavbarVisit /> */}
-      <div className='card p-4 '>
+      <div className='card p-4 d-flex align-items-center'>
         <form className=" col-md-10 d-flex flex-direction-column justify-content-center" action="#">
 
           <div className="col-md-6 border border-secondary rounded p-3">

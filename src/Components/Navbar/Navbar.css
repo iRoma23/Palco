@@ -45,6 +45,7 @@
   color: #fff;
   text-decoration: none;
   padding: 0.5rem 1rem;
+  display: flex;
 }
 
 .nav-links:hover {

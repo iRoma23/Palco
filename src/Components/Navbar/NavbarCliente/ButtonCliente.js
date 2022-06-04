@@ -19,11 +19,11 @@ const ButtonCliente = ({type, onClick, buttonStyle, buttonSize}) => {
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <Link className='decoration-none display-none' to='/'>
+    // <Link className='decoration-none display-none' to='/'>
       <button className={`button ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick} type={type}>
         {MenuButtonItem}
       </button>
-    </Link>
+    // </Link>
   )
 }
 

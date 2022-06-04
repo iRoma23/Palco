@@ -34,9 +34,9 @@ const Cardspalco = () => {
             <h5 className="card-title">Usuario</h5>
             <p className="card-text">
               Disfruta de los mejores partidos comodamente y con la mejor vista
-              desde nuestros palcos junto a tu familia y amigos.
+              desde nuestros palcos junto a tu familia y/o amigos.
             </p>
-            <NavLink to="/todo-eventos" className="btn btn-primary">
+            <NavLink to="/login" className="btn btn-primary">
               Alquilar un Palco
             </NavLink>
           </div>

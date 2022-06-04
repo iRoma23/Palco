@@ -1,11 +1,11 @@
 export const MenuItems = [
   {
     title: 'Eventos',
-    url: '/home-propietario',
+    url: '/home',
     cName: 'nav-links'
   },
   {
-    title: 'Eventos Publicados',
+    title: 'Mis Reservas',
     url: '/publicados',
     cName: 'nav-links'
   },
@@ -13,12 +13,7 @@ export const MenuItems = [
     title: 'Registrar Palco',
     url: '/registro_propietario',
     cName: 'nav-links'
-  },
-  {
-    title: 'Salir',
-    url: '/',
-    cName: 'nav-links-mobile'
-  },
+  }
 ]
 
 export const MenuButtonItem = 'Salir';
