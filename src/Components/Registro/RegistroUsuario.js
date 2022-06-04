@@ -1,22 +1,65 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import NavbarVisit from "../Navbar/NavbarVisitante/NavbarVisit";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+
+import axios from "axios";
 
 const RegistroUsuario = () => {
+  const [newUsername, setNewUsername] = useState('')
+  const [newPassword, setNewPassword] = useState('') 
+  const [newName, setNewName] = useState('') 
+  const [newEmail, setNewEmail] = useState('')
+  
+  const navigate = useNavigate()  
+
+  const baseUrl = 'https://palco-app.herokuapp.com/api/user'
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log(newUsername, newPassword, newName, newEmail)
+    const userObject = {
+      username: newUsername,
+      password: newPassword,
+      name: newName,
+      email: newEmail
+    }
+    axios.post(baseUrl, userObject)
+      .then(response => console.log(response.data))
+
+    setNewUsername('')
+    setNewPassword('')
+    setNewEmail('')
+    setNewName('')
+
+    navigate('/home')    
+  }
+
+  const handleUsernameChange = e => setNewUsername(e.target.value)
+  const handlePasswordChange = e => setNewPassword(e.target.value)
+  const handleNameChange = e => setNewName(e.target.value)
+  const handleEmailChange = e => setNewEmail(e.target.value)
+
   return (
     <>
-      <form className="fondo1" action="#">
+      <form className="fondo1" action="#" onSubmit={handleSubmit}>
         <div className="container">
           <div className="col-md-6 p-2 border border-secondary border-2 rounded">
             <div className="text-center">
               <h3>Registro de usuario</h3>
             </div>
+
             <div className="col-md-6">
-              <label for="inputEmail4" className="form-label">
-                Email
+              <label for="inputPassword4" className="form-label">
+                Usuario
               </label>
-              <input type="email" className="form-control" id="inputEmail4" />
+              <input
+                type="text"
+                className="form-control"
+                id="inputPassword4"
+                value={newUsername}
+                onChange={handleUsernameChange}
+              />
             </div>
+
             <div className="col-md-6">
               <label for="inputPassword4" className="form-label">
                 Password
@@ -25,8 +68,11 @@ const RegistroUsuario = () => {
                 type="password"
                 className="form-control"
                 id="inputPassword4"
+                value={newPassword}
+                onChange={handlePasswordChange}
               />
             </div>
+
             <div className="col-12">
               <label for="inputAddress" className="form-label">
                 Nombres Completos
@@ -36,19 +82,24 @@ const RegistroUsuario = () => {
                 className="form-control"
                 id="inputAddress"
                 placeholder="Ej. Romario Jara"
+                value={newName}
+                onChange={handleNameChange} 
               />
             </div>
+
             <div className="col-md-6">
-              <label for="movil2" className="form-label">
-                Telefono Móvil
+              <label for="inputEmail4" className="form-label">
+                Email
               </label>
-              <input
-                type="number"
-                class="form-control"
-                id="movil2"
-                placeholder=""
+              <input 
+                type="email"
+                className="form-control"
+                id="inputEmail4"
+                value={newEmail}
+                onChange={handleEmailChange} 
               />
             </div>
+
             <div className="col-md-4">
               <label for="inputState" className="form-label">
                 Pais
@@ -63,6 +114,7 @@ const RegistroUsuario = () => {
                 <option>Brasil</option>
               </select>
             </div>
+
             <div className="col-12">
               <div className="form-check">
                 <input
@@ -75,11 +127,13 @@ const RegistroUsuario = () => {
                 </label>
               </div>
             </div>
+
             <div className="col-12 text-center">
-              <Link to="/login" type="submit" className="btn btn-primary rounded-pill btn-lg">
+              <button type="submit" className="btn btn-primary rounded-pill btn-lg">
                 Registrar
-              </Link>
+              </button>
             </div>
+
             <div className="form-text mb-3">
               <Link to="/login">Ya tengo una cuenta</Link>
             </div>
